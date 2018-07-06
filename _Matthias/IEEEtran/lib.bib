@@ -1,0 +1,1069 @@
+% DBID: 44vuo4igsa2qqc3pks7ceid7n4
+% Encoding: UTF-8
+
+@Article{Hou2016,
+  author      = {Lu Hou and Quanming Yao and James T. Kwok},
+  title       = {Loss-aware Binarization of Deep Networks},
+  journal     = {ICLR},
+  year        = {2017},
+  abstract    = {Deep neural network models, though very powerful and highly successful, are computationally expensive in terms of space and time. Recently, there have been a number of attempts on binarizing the network weights and activations. This greatly reduces the network size, and replaces the underlying multiplications to additions or even XNOR bit operations. However, existing binarization schemes are based on simple matrix approximation and ignore the effect of binarization on the loss. In this paper, we propose a proximal Newton algorithm with diagonal Hessian approximation that directly minimizes the loss w.r.t. the binarized weights. The underlying proximal step has an efficient closed-form solution, and the second-order information can be efficiently obtained from the second moments already computed by the Adam optimizer. Experiments on both feedforward and recurrent networks show that the proposed loss-aware binarization algorithm outperforms existing binarization schemes, and is also more robust for wide and deep networks.},
+  date        = {2016-11-05},
+  eprint      = {1611.01600v2},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Hou2016 - Loss-aware Binarization of Deep Networks.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.NE, cs.LG},
+  owner       = {Matthias Wess},
+  review      = {Contains standard architectures for Cifar10 SVHN and MNIST},
+  timestamp   = {2017-12-18},
+}
+
+@InProceedings{Gupta2015a,
+  author      = {Suyog Gupta and Ankur Agrawal and Kailash Gopalakrishnan and Pritish Narayanan},
+  title       = {Deep Learning with Limited Numerical Precision},
+  booktitle   = {ICML},
+  year        = {2015},
+  abstract    = {Training of large-scale deep neural networks is often constrained by the available computational resources. We study the effect of limited precision data representation and computation on neural network training. Within the context of low-precision fixed-point computations, we observe the rounding scheme to play a crucial role in determining the network's behavior during training. Our results show that deep networks can be trained using only 16-bit wide fixed-point number representation when using stochastic rounding, and incur little to no degradation in the classification accuracy. We also demonstrate an energy-efficient hardware accelerator that implements low-precision fixed-point arithmetic with stochastic rounding.},
+  date        = {2015-02-09},
+  eprint      = {1502.02551v1},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Gupta2015a - Deep Learning with Limited Numerical Precision.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.LG, cs.NE, stat.ML},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@Article{Zhou2016,
+  author      = {Shuchang Zhou and Yuxin Wu and Zekun Ni and Xinyu Zhou and He Wen and Yuheng Zou},
+  title       = {DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients},
+  journal     = {ArXiv},
+  year        = {2016},
+  abstract    = {We propose DoReFa-Net, a method to train convolutional neural networks that have low bitwidth weights and activations using low bitwidth parameter gradients. In particular, during backward pass, parameter gradients are stochastically quantized to low bitwidth numbers before being propagated to convolutional layers. As convolutions during forward/backward passes can now operate on low bitwidth weights and activations/gradients respectively, DoReFa-Net can use bit convolution kernels to accelerate both training and inference. Moreover, as bit convolutions can be efficiently implemented on CPU, FPGA, ASIC and GPU, DoReFa-Net opens the way to accelerate training of low bitwidth neural network on these hardware. Our experiments on SVHN and ImageNet datasets prove that DoReFa-Net can achieve comparable prediction accuracy as 32-bit counterparts. For example, a DoReFa-Net derived from AlexNet that has 1-bit weights, 2-bit activations, can be trained from scratch using 6-bit gradients to get 46.1\% top-1 accuracy on ImageNet validation set. The DoReFa-Net AlexNet model is released publicly.},
+  date        = {2016-06-20},
+  eprint      = {1606.06160v2},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Zhou2016 - DoReFa Net_ Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.NE, cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@InProceedings{Springenberg2015,
+  author      = {Jost Tobias Springenberg and Alexey Dosovitskiy and Thomas Brox and Martin Riedmiller},
+  title       = {Striving for Simplicity: The All Convolutional Net},
+  booktitle   = {ICLR},
+  year        = {2015},
+  abstract    = {Most modern convolutional neural networks (CNNs) used for object recognition are built using the same principles: Alternating convolution and max-pooling layers followed by a small number of fully connected layers. We re-evaluate the state of the art for object recognition from small images with convolutional networks, questioning the necessity of different components in the pipeline. We find that max-pooling can simply be replaced by a convolutional layer with increased stride without loss in accuracy on several image recognition benchmarks. Following this finding -- and building on other recent work for finding simple network structures -- we propose a new architecture that consists solely of convolutional layers and yields competitive or state of the art performance on several object recognition datasets (CIFAR-10, CIFAR-100, ImageNet). To analyze the network we introduce a new variant of the "deconvolution approach" for visualizing features learned by CNNs, which can be applied to a broader range of network structures than existing approaches.},
+  date        = {2014-12-21},
+  eprint      = {1412.6806v3},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/CNN Architectures/Springenberg2015 - Striving for Simplicity_ the All Convolutional Net.pdf:PDF},
+  groups      = {Architectures},
+  keywords    = {cs.LG, cs.CV, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-12-18},
+}
+
+@InProceedings{Hubara2016b,
+  author    = {Hubara, Itay and Courbariaux, Matthieu and Soudry, Daniel and El-Yaniv, Ran and Bengio, Yoshua},
+  title     = {Binarized neural networks},
+  booktitle = {Advances in neural information processing systems},
+  year      = {2016},
+  pages     = {4107--4115},
+  abstract  = {We introduce a method to train Binarized Neural Networks (BNNs) - neural networks with binary weights and activations at run-time. At train-time the binary weights and activations are used for computing the parameter gradients. During the forward pass, BNNs drastically reduce memory size and accesses, and replace most arithmetic operations with bit-wise operations, which is expected to substantially improve power-efﬁciency. To validate the effectiveness of BNNs, we conducted two sets of experiments on the Torch7 and Theano frameworks. On both, BNNs achieved nearly state-of-the-art results over the MNIST, CIFAR-10 and SVHN datasets. We also report our preliminary results on the challenging ImageNet dataset. Last but not least, we wrote a binary matrix multiplication GPU kernel with which it is possible to run our MNIST BNN 7 times faster than with an unoptimized GPU kernel, without suffering any loss in classiﬁcation accuracy. The code for training and running our BNNs is available on-line.},
+  file      = {:Machine Learning/Quantized Neural Nets/Hubara2016a - Binarized Neural Networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  keywords  = {rank4},
+  owner     = {Matthias Wess},
+  timestamp = {2018-02-27},
+}
+
+@InProceedings{He2016,
+  author        = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  title         = {Deep residual learning for image recognition},
+  booktitle     = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  year          = {2016},
+  pages         = {770--778},
+  __markedentry = {[Matthias Wess:6]},
+  groups        = {A},
+  owner         = {Matthias Wess},
+  timestamp     = {2018-03-28},
+}
+
+@Article{Kim2016,
+  author      = {Minje Kim and Paris Smaragdis},
+  title       = {Bitwise Neural Networks},
+  journal     = {arXiv preprint arXiv:1601.06071},
+  year        = {2016},
+  abstract    = {Based on the assumption that there exists a neural network that efficiently represents a set of Boolean functions between all binary inputs and outputs, we propose a process for developing and deploying neural networks whose weight parameters, bias terms, input, and intermediate hidden layer output signals, are all binary-valued, and require only basic bit logic for the feedforward pass. The proposed Bitwise Neural Network (BNN) is especially suitable for resource-constrained environments, since it replaces either floating or fixed-point arithmetic with significantly more efficient bitwise operations. Hence, the BNN requires for less spatial complexity, less memory bandwidth, and less power consumption in hardware. In order to design such networks, we propose to add a few training schemes, such as weight compression and noisy backpropagation, which result in a bitwise network that performs almost as well as its corresponding real-valued network. We test the proposed network on the MNIST dataset, represented using binary features, and show that BNNs result in competitive performance while offering dramatic computational savings.},
+  date        = {2016-01-22},
+  eprint      = {1601.06071v1},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Kim2016 - Bitwise Neural Networks.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.LG, cs.AI, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@Article{McDanel2017,
+  author      = {Bradley McDanel and Surat Teerapittayanon and H. T. Kung},
+  title       = {Embedded Binarized Neural Networks},
+  journal     = {EWSN},
+  year        = {2017},
+  abstract    = {We study embedded Binarized Neural Networks (eBNNs) with the aim of allowing current binarized neural networks (BNNs) in the literature to perform feedforward inference efficiently on small embedded devices. We focus on minimizing the required memory footprint, given that these devices often have memory as small as tens of kilobytes (KB). Beyond minimizing the memory required to store weights, as in a BNN, we show that it is essential to minimize the memory used for temporaries which hold intermediate results between layers in feedforward inference. To accomplish this, eBNN reorders the computation of inference while preserving the original BNN structure, and uses just a single floating-point temporary for the entire neural network. All intermediate results from a layer are stored as binary values, as opposed to floating-points used in current BNN implementations, leading to a 32x reduction in required temporary space. We provide empirical evidence that our proposed eBNN approach allows efficient inference (10s of ms) on devices with severely limited memory (10s of KB). For example, eBNN achieves 95\% accuracy on the MNIST dataset running on an Intel Curie with only 15 KB of usable memory with an inference runtime of under 50 ms per sample. To ease the development of applications in embedded contexts, we make our source code available that allows users to train and discover eBNN models for a learning task at hand, which fit within the memory constraint of the target device.},
+  date        = {2017-09-06},
+  eprint      = {1709.02260v1},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/McDanel2017 - Embedded Binarized Neural Networks.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.CV, cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@InProceedings{Zhang2015,
+  author       = {Zhang, Chen and Li, Peng and Sun, Guangyu and Guan, Yijin and Xiao, Bingjun and Cong, Jason},
+  title        = {Optimizing fpga-based accelerator design for deep convolutional neural networks},
+  booktitle    = {Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  year         = {2015},
+  pages        = {161--170},
+  organization = {ACM},
+  file         = {:Machine Learning/Accelerators/Zhang2015 - Optimizing Fpga Based Accelerator Design for Deep Convolutional Neural Networks.pdf:PDF},
+  groups       = {Accelerators},
+  owner        = {Matthias Wess},
+  timestamp    = {2018-03-05},
+}
+
+@InProceedings{Hwang2014,
+  author    = {K. Hwang and W. Sung},
+  title     = {Fixed-point feedforward deep neural network design using weights +1, 0, and -1},
+  booktitle = {SiPS},
+  year      = {2014},
+  pages     = {1--6},
+  month     = oct,
+  abstract  = {Feedforward deep neural networks that employ multiple hidden layers show high performance in many applications, but they demand complex hardware for implementation. The hardware complexity can be much lowered by minimizing the word-length of weights and signals, but direct quantization for ﬁxed-point network design does not yield good results. We optimize the ﬁxed-point design by employing backpropagation based retraining. The designed ﬁxed-point networks with ternary weights (+1, 0, and -1) and 3-bit signal show only negligible performance loss when compared to the ﬂoating-point counterparts. The backpropagation for retraining uses quantized weights and ﬁxed-point signal to compute the output, but utilizes high precision values for adapting the networks. A character recognition and a phoneme recognition examples are presented.},
+  doi       = {10.1109/SiPS.2014.6986082},
+  file      = {:Machine Learning/Quantized Neural Nets/Hwang2014 - Fixed Point Feedforward Deep Neural Network Design Using Weights +1, 0, and 1.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  issn      = {2162-3562},
+  keywords  = {backpropagation, character recognition, feedforward neural nets, fixed point arithmetic, signal processing, 3-bit signal, backpropagation based retraining, character recognition, fixed-point feedforward deep neural network design, fixed-point signal, hardware complexity, phoneme recognition, quantized weights, ternary weights, Backpropagation, Error analysis, Feedforward neural networks, Hardware, Quantization (signal), Training},
+  owner     = {Matthias Wess},
+  timestamp = {2017-11-28},
+}
+
+@Article{Zhou2017a,
+  author      = {Aojun Zhou and Anbang Yao and Yiwen Guo and Lin Xu and Yurong Chen},
+  title       = {Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights},
+  journal     = {ICLR},
+  year        = {2017},
+  abstract    = {This paper presents incremental network quantization (INQ), a novel method, targeting to efficiently convert any pre-trained full-precision convolutional neural network (CNN) model into a low-precision version whose weights are constrained to be either powers of two or zero. Unlike existing methods which are struggled in noticeable accuracy loss, our INQ has the potential to resolve this issue, as benefiting from two innovations. On one hand, we introduce three interdependent operations, namely weight partition, group-wise quantization and re-training. A well-proven measure is employed to divide the weights in each layer of a pre-trained CNN model into two disjoint groups. The weights in the first group are responsible to form a low-precision base, thus they are quantized by a variable-length encoding method. The weights in the other group are responsible to compensate for the accuracy loss from the quantization, thus they are the ones to be re-trained. On the other hand, these three operations are repeated on the latest re-trained group in an iterative manner until all the weights are converted into low-precision ones, acting as an incremental network quantization and accuracy enhancement procedure. Extensive experiments on the ImageNet classification task using almost all known deep CNN architectures including AlexNet, VGG-16, GoogleNet and ResNets well testify the efficacy of the proposed method. Specifically, at 5-bit quantization, our models have improved accuracy than the 32-bit floating-point references. Taking ResNet-18 as an example, we further show that our quantized models with 4-bit, 3-bit and 2-bit ternary weights have improved or very similar accuracy against its 32-bit floating-point baseline. Besides, impressive results with the combination of network pruning and INQ are also reported. The code is available at https://github.com/Zhouaojun/Incremental-Network-Quantization.},
+  date        = {2017-02-10},
+  eprint      = {1702.03044v2},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Zhou2017a - Incremental Network Quantization_ Towards Lossless CNNs with Low Precision Weights.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.CV, cs.AI, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-01-09},
+}
+
+@InProceedings{Han2015a,
+  author      = {Han, Song and Pool, Jeff and Tran, John and Dally, William},
+  title       = {Learning both Weights and Connections for Efficient Neural Networks},
+  booktitle   = {Advances in neural information processing systems},
+  year        = {2015},
+  pages       = {1135--1143},
+  abstract    = {Neural networks are both computationally intensive and memory intensive, making them difficult to deploy on embedded systems. Also, conventional networks fix the architecture before training starts; as a result, training cannot improve the architecture. To address these limitations, we describe a method to reduce the storage and computation required by neural networks by an order of magnitude without affecting their accuracy by learning only the important connections. Our method prunes redundant connections using a three-step method. First, we train the network to learn which connections are important. Next, we prune the unimportant connections. Finally, we retrain the network to fine tune the weights of the remaining connections. On the ImageNet dataset, our method reduced the number of parameters of AlexNet by a factor of 9x, from 61 million to 6.7 million, without incurring accuracy loss. Similar experiments with VGG-16 found that the number of parameters can be reduced by 13x, from 138 million to 10.3 million, again with no loss of accuracy.},
+  date        = {2015-06-08},
+  eprint      = {1506.02626v3},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Compressed Neural Nets/Han2015a - Learning Both Weights and Connections for Efficient Neural Networks.pdf:PDF},
+  groups      = {Compressed Neural Networks, Pruning},
+  keywords    = {cs.NE, cs.CV, cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-03-05},
+}
+
+@InProceedings{Yu2017,
+  author       = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
+  title        = {Scalpel: Customizing dnn pruning to the underlying hardware parallelism},
+  booktitle    = {Proceedings of the 44th Annual International Symposium on Computer Architecture},
+  year         = {2017},
+  pages        = {548--560},
+  organization = {ACM},
+  file         = {:Machine Learning/Compressed Neural Nets/Yu2017 - Scalpel_ Customizing Dnn Pruning to the Underlying Hardware Parallelism.pdf:PDF},
+  groups       = {Pruning},
+  owner        = {Matthias Wess},
+  review       = {Prune fitting to the underlying hardware plattform},
+  timestamp    = {2018-03-05},
+}
+
+@InProceedings{Tann2017,
+  author       = {Tann, Hokchhay and Hashemi, Soheil and Bahar, R Iris and Reda, Sherief},
+  title        = {Hardware-software codesign of accurate, multiplier-free Deep Neural Networks},
+  booktitle    = {DAC},
+  year         = {2017},
+  pages        = {1--6},
+  organization = {IEEE},
+  abstract     = {While Deep Neural Networks (DNNs) push the state-of-the-art in many machine learning applications, they often require millions of expensive floating-point operations for each input classification. This computation overhead limits the applicability of DNNs to low-power, embedded platforms and incurs high cost in data centers. This motivates recent interests in designing low-power, low-latency DNNs based on fixed-point, ternary, or even binary data precision. While recent works in this area offer promising results, they often lead to large accuracy drops when compared to the floating-point networks. We propose a novel approach to map floating-point based DNNs to 8-bit dynamic fixed-point networks with integer power-of-two weights with no change in network architecture. Our dynamic fixed-point DNNs allow different radix points between layers. During inference, power-of-two weights allow multiplications to be replaced with arithmetic shifts, while the 8-bit fixed-point representation simplifies both the buffer and adder design. In addition, we propose a hardware accelerator design to achieve low-power, low-latency inference with insignificant degradation in accuracy. Using our custom accelerator design with the CIFAR-10 and ImageNet datasets, we show that our method achieves significant power and energy savings while increasing the classification accuracy.},
+  date         = {2017-05-11},
+  eprint       = {1705.04288v1},
+  eprintclass  = {cs.NE},
+  eprinttype   = {arXiv},
+  file         = {:Machine Learning/Quantized Neural Nets/Tann2017 - Hardware Software Codesign of Accurate, Multiplier Free Deep Neural Networks.pdf:PDF},
+  groups       = {Quantized Neural Nets},
+  keywords     = {cs.NE},
+  owner        = {Matthias Wess},
+  timestamp    = {2017-11-28},
+}
+
+@InProceedings{Ioffe2015,
+  author      = {Sergey Ioffe and Christian Szegedy},
+  title       = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  booktitle   = {ICML},
+  year        = {2015},
+  pages       = {448--456},
+  abstract    = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.},
+  date        = {2015-02-11},
+  eprint      = {1502.03167v3},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/CNN Training/Ioffe2015 - Batch Normalization_ Accelerating Deep Network Training by Reducing Internal Covariate Shift.pdf:PDF},
+  groups      = {Training},
+  keywords    = {cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-01-23},
+}
+
+@Article{Raghavan2017,
+  author    = {Raghavan, Aswin and Amer, Mohamed and Chai, Sek},
+  title     = {BitNet: Bit-Regularized Deep Neural Networks},
+  journal   = {ArXiv},
+  year      = {2017},
+  abstract  = {We present a novel regularization scheme for training deep neural networks. The parameters of neural networks are usually unconstrained and have a dynamic range dispersed over the real line. Our key idea is to control the expressive power of the network by dynamically quantizing the range and set of values that the parameters can take. We formulate this idea using a novel end-to-end approach that regularizes the traditional classiﬁcation loss function. Our regularizer is inspired by the Minimum Description Length principle. For each layer of the network, our approach optimizes a translation and scaling factor along with integer-valued parameters. We empirically compare BitNet to an equivalent unregularized model on the MNIST and CIFAR-10 datasets. We show that BitNet converges faster to a superior quality solution. Additionally, the resulting model is signiﬁcantly smaller in size due to the use of integer parameters instead of ﬂoats.},
+  file      = {:Machine Learning/Quantized Neural Nets/Raghavan2017 - BitNet_ Bit Regularized Deep Neural Networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  keywords  = {rank4},
+  owner     = {Matthias Wess},
+  review    = {Regularization based on Bit quantization schemes, this could help to force the weights to certain values.},
+  timestamp = {2017-11-29},
+}
+
+@MastersThesis{Gysel2016a,
+  author    = {Gysel, Philipp},
+  title     = {Ristretto: Hardware-oriented approximation of convolutional neural networks},
+  school    = {University of California Davis},
+  year      = {2016},
+  abstract  = {Convolutional neural networks (CNN) have achieved major breakthroughs in recent years.
+Their performance in computer vision have matched and in some areas even surpassed hu-
+man capabilities. Deep neural networks can capture complex non-linear features; however
+this ability comes at the cost of high computational and memory requirements. State-of-
+art networks require billions of arithmetic operations and millions of parameters.
+To enable embedded devices such as smart phones, Google glasses and monitoring
+cameras with the astonishing power of deep learning, dedicated hardware accelerators can
+be used to decrease both execution time and power consumption. In applications where
+fast connection to the cloud is not guaranteed or where privacy is important, computation
+needs to be done locally. Many hardware accelerators for deep neural networks have
+been proposed recently. A ﬁrst important step of accelerator design is hardware-oriented
+approximation of deep networks, which enables energy-eﬃcient inference.
+We present Ristretto, a fast and automated framework for CNN approximation. Ristret-
+to simulates the hardware arithmetic of a custom hardware accelerator. The framework
+reduces the bit-width of network parameters and outputs of resource-intense layers, which
+reduces the chip area for multiplication units signiﬁcantly. Alternatively, Ristretto can
+remove the need for multipliers altogether, resulting in an adder-only arithmetic. The
+tool ﬁne-tunes trimmed networks to achieve high classiﬁcation accuracy.
+Since training of deep neural networks can be time-consuming, Ristretto uses highly
+optimized routines which run on the GPU. This enables fast compression of any given
+network.
+Given a maximum tolerance of 1%, Ristretto can successfully condense CaﬀeNet and
+SqueezeNet to 8-bit. The code for Ristretto is available.},
+  file      = {:Machine Learning/Quantized Neural Nets/Gysel2016a - Ristretto_ Hardware Oriented Approximation of Convolutional Neural Networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  journal   = {ArXiv},
+  owner     = {Matthias Wess},
+  timestamp = {2017-11-24},
+}
+
+@InProceedings{Albericio2017,
+  author       = {Albericio, Jorge and Delm{\'a}s, Alberto and Judd, Patrick and Sharify, Sayeh and O'Leary, Gerard and Genov, Roman and Moshovos, Andreas},
+  title        = {Bit-pragmatic deep neural network computing},
+  booktitle    = {MICRO},
+  year         = {2017},
+  pages        = {382--394},
+  organization = {ACM},
+  abstract     = {We quantify a source of ineffectual computations DNN hardware typically uses either 16-bit fixed-point [3]
+when processing the multiplications of the convolutional layers in or quantized 8-bit numbers [5] and bit-parallel compute units.
+Deep Neural Networks (DNNs) and propose Pragmatic (PRA), an Since the actual precision requirements vary considerably
+architecture that exploits it improving performance and energy
+efficiency. The source of these ineffectual computations is best un- across DNN layers [2], typical DNN hardware ends up
+derstood in the context of conventional multipliers which generate processing an excess of bits when processing these inner
+internally multiple terms, that is, products of the multiplicand products [4]. Unless the values processed by a layer need
+and powers of two, which added together produce the final the full value range afforded by the hardware’s representation,
+product [1]. At runtime, many of these terms are zero as they are an excess of bits, some at the most significant bit positions
+generated when the multiplicand is combined with the zero-bits
+of the multiplicator. While conventional bit-parallel multipliers (prefix bits) and some at the least significant positions (suffix
+calculate all terms in parallel to reduce individual product bits), need to be set to zero yet do not contribute to the
+latency, PRA calculates only the non-zero terms using a) on-the- final outcome. With bit-parallel compute units there is no
+fly conversion of the multiplicator representation into an explicit performance benefit in not processing these excess bits.
+list of powers of two, and b) bit-parallel multplicand/bit-serial Recent work, Stripes (STR) uses serial-parallel multiplica-
+multiplicator processing units.},
+  file         = {:Machine Learning/Quantized Neural Nets/Albericio2017 - Bit Pragmatic Deep Neural Network Computing.pdf:PDF},
+  groups       = {Quantized Neural Nets},
+  owner        = {Matthias Wess},
+  timestamp    = {2017-12-11},
+}
+
+@Article{Shin2017,
+  author      = {Sungho Shin and Yoonho Boo and Wonyong Sung},
+  title       = {Fixed-point optimization of deep neural networks with adaptive step size retraining},
+  journal     = {ICASSP},
+  year        = {2017},
+  abstract    = {Fixed-point optimization of deep neural networks plays an important role in hardware based design and low-power implementations. Many deep neural networks show fairly good performance even with 2- or 3-bit precision when quantized weights are fine-tuned by retraining. We propose an improved fixedpoint optimization algorithm that estimates the quantization step size dynamically during the retraining. In addition, a gradual quantization scheme is also tested, which sequentially applies fixed-point optimizations from high- to low-precision. The experiments are conducted for feed-forward deep neural networks (FFDNNs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs).},
+  date        = {2017-02-27},
+  eprint      = {1702.08171v1},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Shin2017 - Fixed Point Optimization of Deep Neural Networks with Adaptive Step Size Retraining.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-24},
+}
+
+@InProceedings{Salimans2016,
+  author      = {Tim Salimans and Diederik P. Kingma},
+  title       = {Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks},
+  booktitle   = {NIPS},
+  year        = {2016},
+  pages       = {901--909},
+  abstract    = {We present weight normalization: a reparameterization of the weight vectors in a neural network that decouples the length of those weight vectors from their direction. By reparameterizing the weights in this way we improve the conditioning of the optimization problem and we speed up convergence of stochastic gradient descent. Our reparameterization is inspired by batch normalization but does not introduce any dependencies between the examples in a minibatch. This means that our method can also be applied successfully to recurrent models such as LSTMs and to noise-sensitive applications such as deep reinforcement learning or generative models, for which batch normalization is less well suited. Although our method is much simpler, it still provides much of the speed-up of full batch normalization. In addition, the computational overhead of our method is lower, permitting more optimization steps to be taken in the same amount of time. We demonstrate the usefulness of our method on applications in supervised image recognition, generative modelling, and deep reinforcement learning.},
+  date        = {2016-02-25},
+  eprint      = {1602.07868v3},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/CNN Training/Salimans2016 - Weight Normalization_ a Simple Reparameterization to Accelerate Training of Deep Neural Networks.pdf:PDF},
+  groups      = {Training},
+  keywords    = {cs.LG, cs.AI, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-01-23},
+}
+
+@InProceedings{Ding2017,
+  author       = {Caiwen Ding and Siyu Liao and Yanzhi Wang and Zhe Li and Ning Liu and Youwei Zhuo and Chao Wang and Xuehai Qian and Yu Bai and Geng Yuan and Xiaolong Ma and Yipeng Zhang and Jian Tang and Qinru Qiu and Xue Lin and Bo Yuan},
+  title        = {CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-CirculantWeight Matrices},
+  booktitle    = {MICRO},
+  year         = {2017},
+  pages        = {395--408},
+  organization = {ACM},
+  publisher    = {{ACM} Press},
+  abstract     = {Large-scale deep neural networks (DNNs) are both compute and memory intensive. As the size of DNNs continues to grow, it is critical to improve the energy efficiency and performance while maintaining accuracy. For DNNs, the model size is an important factor affecting performance, scalability and energy efficiency. Weight pruning achieves good compression ratios but suffers from three drawbacks: 1) the irregular network structure after pruning; 2) the increased training complexity; and 3) the lack of rigorous guarantee of compression ratio and inference accuracy. To overcome these limitations, this paper proposes CirCNN, a principled approach to represent weights and process neural networks using block-circulant matrices. CirCNN utilizes the Fast Fourier Transform (FFT)-based fast multiplication, simultaneously reducing the computational complexity (both in inference and training) from O(n2) to O(nlogn) and the storage complexity from O(n2) to O(n), with negligible accuracy loss. Compared to other approaches, CirCNN is distinct due to its mathematical rigor: it can converge to the same effectiveness as DNNs without compression. The CirCNN architecture, a universal DNN inference engine that can be implemented on various hardware/software platforms with configurable network architecture. To demonstrate the performance and energy efficiency, we test CirCNN in FPGA, ASIC and embedded processors. Our results show that CirCNN architecture achieves very high energy efficiency and performance with a small hardware footprint. Based on the FPGA implementation and ASIC synthesis results, CirCNN achieves 6-102X energy efficiency improvements compared with the best state-of-the-art results.},
+  date         = {2017-08-29},
+  doi          = {10.1145/3123939.3124552},
+  eprint       = {1708.08917v1},
+  eprintclass  = {cs.CV},
+  eprinttype   = {arXiv},
+  file         = {:Machine Learning/Compressed Neural Nets/Ding2017 - CirCNN_ Accelerating and Compressing Deep Neural Networks Using Block CirculantWeight Matrices.pdf:PDF},
+  groups       = {Compressed Neural Networks},
+  keywords     = {cs.CV, cs.AI, cs.LG, stat.ML},
+  owner        = {Matthias Wess},
+  timestamp    = {2017-12-11},
+}
+
+@Article{Yang2017,
+  author      = {Yang, Tien-Ju and Chen, Yu-Hsin and Sze, Vivienne},
+  title       = {Designing energy-efficient convolutional neural networks using energy-aware pruning},
+  journal     = {arXiv preprint},
+  year        = {2017},
+  abstract    = {Deep convolutional neural networks (CNNs) are indispensable to state-of-the-art computer vision algorithms. However, they are still rarely deployed on battery-powered mobile devices, such as smartphones and wearable gadgets, where vision algorithms can enable many revolutionary real-world applications. The key limiting factor is the high energy consumption of CNN processing due to its high computational complexity. While there are many previous efforts that try to reduce the CNN model size or amount of computation, we find that they do not necessarily result in lower energy consumption, and therefore do not serve as a good metric for energy cost estimation. To close the gap between CNN design and energy consumption optimization, we propose an energy-aware pruning algorithm for CNNs that directly uses energy consumption estimation of a CNN to guide the pruning process. The energy estimation methodology uses parameters extrapolated from actual hardware measurements that target realistic battery-powered system setups. The proposed layer-by-layer pruning algorithm also prunes more aggressively than previously proposed pruning methods by minimizing the error in output feature maps instead of filter weights. For each layer, the weights are first pruned and then locally fine-tuned with a closed-form least-square solution to quickly restore the accuracy. After all layers are pruned, the entire network is further globally fine-tuned using back-propagation. With the proposed pruning method, the energy consumption of AlexNet and GoogLeNet are reduced by 3.7x and 1.6x, respectively, with less than 1% top-5 accuracy loss. Finally, we show that pruning the AlexNet with a reduced number of target classes can greatly decrease the number of weights but the energy reduction is limited. Energy modeling tool and energy-aware pruned models available at http://eyeriss.mit.edu/energy.html},
+  date        = {2016-11-16},
+  eprint      = {1611.05128v4},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Compressed Neural Nets/Yang2017 - Designing Energy Efficient Convolutional Neural Networks Using Energy Aware Pruning.pdf:PDF},
+  groups      = {Pruning},
+  keywords    = {cs.CV},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-03-05},
+}
+
+@InProceedings{Tang2017,
+  author    = {Tang, Wei and Hua, Gang and Wang, Liang},
+  title     = {How to Train a Compact Binary Neural Network with High Accuracy?},
+  booktitle = {AAAI},
+  year      = {2017},
+  pages     = {2625--2631},
+  abstract  = {How to train a binary neural network (BinaryNet) with both
+high compression rate and high accuracy on large scale
+datasets? We answer this question through a careful analysis
+of previous work on BinaryNets, in terms of training strate-
+gies, regularization, and activation approximation. Our ﬁnd-
+ings ﬁrst reveal that a low learning rate is highly preferred
+to avoid frequent sign changes of the weights, which often
+makes the learning of BinaryNets unstable. Secondly, we pro-
+pose to use PReLU instead of ReLU in a BinaryNet to con-
+veniently absorb the scale factor for weights to the activation
+function, which enjoys high computation efﬁciency for bi-
+narized layers while maintains high approximation accuracy.
+Thirdly, we reveal that instead of imposing L2 regularization,
+driving all weights to zero which contradicts with the setting
+of BinaryNets, we introduce a regularization term that en-
+courages the weights to be bipolar. Fourthly, we discover that
+the failure of binarizing the last layer, which is essential for
+high compression rate, is due to the improper output range.
+We propose to use a scale layer to bring it to normal. Last
+but not least, we propose multiple binarizations to improve
+the approximation of the activations. The composition of all
+these enables us to train BinaryNets with both high compres-
+sion rate and high accuracy, which is strongly supported by
+our extensive empirical study.},
+  file      = {:Machine Learning/Quantized Neural Nets/Tang2017 - How to Train a Compact Binary Neural Network with High Accuracy_.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  keywords  = {rank4},
+  owner     = {Matthias Wess},
+  timestamp = {2017-11-24},
+}
+
+@Article{Gitman2017,
+  author      = {Igor Gitman and Boris Ginsburg},
+  title       = {Comparison of Batch Normalization and Weight Normalization Algorithms for the Large-scale Image Classification},
+  journal     = {ArXiv},
+  year        = {2017},
+  abstract    = {Batch normalization (BN) has become a de facto standard for training deep convolutional networks. However, BN accounts for a significant fraction of training run-time and is difficult to accelerate, since it is a memory-bandwidth bounded operation. Such a drawback of BN motivates us to explore recently proposed weight normalization algorithms (WN algorithms), i.e. weight normalization, normalization propagation and weight normalization with translated ReLU. These algorithms don't slow-down training iterations and were experimentally shown to outperform BN on relatively small networks and datasets. However, it is not clear if these algorithms could replace BN in practical, large-scale applications. We answer this question by providing a detailed comparison of BN and WN algorithms using ResNet-50 network trained on ImageNet. We found that although WN achieves better training accuracy, the final test accuracy is significantly lower ($\approx 6\%$) than that of BN. This result demonstrates the surprising strength of the BN regularization effect which we were unable to compensate for using standard regularization techniques like dropout and weight decay. We also found that training of deep networks with WN algorithms is significantly less stable compared to BN, limiting their practical applications.},
+  date        = {2017-09-24},
+  eprint      = {1709.08145v2},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/CNN Training/Gitman2017 - Comparison of Batch Normalization and Weight Normalization Algorithms for the Large Scale Image Classification.pdf:PDF},
+  groups      = {Training},
+  keywords    = {cs.CV},
+  owner       = {Matthias Wess},
+  review      = {For large scale Batch Normalization is more effective than Weight Normalization and cannot be recovered by Dropout or other techniques},
+  timestamp   = {2018-01-23},
+}
+
+@InProceedings{Dong2017,
+  author    = {Dong, Xin and Chen, Shangyu and Pan, Sinno},
+  title     = {Learning to prune deep neural networks via layer-wise optimal brain surgeon},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2017},
+  pages     = {4860--4874},
+  file      = {:Machine Learning/Compressed Neural Nets/1705.07565.pdf:PDF},
+  groups    = {Pruning},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-05},
+}
+
+@InProceedings{Wu2016,
+  author    = {Wu, Jiaxiang and Leng, Cong and Wang, Yuhang and Hu, Qinghao and Cheng, Jian},
+  title     = {Quantized convolutional neural networks for mobile devices},
+  booktitle = {CVPR},
+  year      = {2016},
+  pages     = {4820--4828},
+  abstract  = {Recently, convolutional neural networks (CNN) have
+demonstrated impressive performance in various computer
+vision tasks. However, high performance hardware is typ-
+ically indispensable for the application of CNN models
+due to the high computation complexity, which prohibits
+their further extensions. In this paper, we propose an efﬁ-
+cient framework, namely Quantized CNN, to simultaneously
+speed-up the computation and reduce the storage and mem-
+ory overhead of CNN models. Both ﬁlter kernels in con-
+volutional layers and weighting matrices in fully-connected
+layers are quantized, aiming at minimizing the estimation
+error of each layer’s response. Extensive experiments on
+the ILSVRC-12 benchmark demonstrate 4 ∼ 6× speed-up
+and 15 ∼ 20× compression with merely one percentage
+loss of classiﬁcation accuracy. With our quantized CNN
+model, even mobile devices can accurately classify images
+within one second.},
+  file      = {:Machine Learning/Quantized Neural Nets/Wu2016 - Quantized Convolutional Neural Networks for Mobile Devices.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  owner     = {Matthias Wess},
+  timestamp = {2017-11-28},
+}
+
+@InProceedings{Umuroglu2017,
+  author    = {Yaman Umuroglu and Nicholas J. Fraser and Giulio Gambardella and Michaela Blott and Philip Heng Wai Leong and Magnus Jahre and Kees A. Vissers},
+  title     = {FINN: A Framework for Fast, Scalable Binarized Neural Network Inference},
+  booktitle = {ACM/SIGDA FPGA},
+  year      = {2017},
+  editor    = {Jonathan W. Greene and Jason Helge Anderson},
+  pages     = {65--74},
+  publisher = {{ACM}},
+  abstract  = {Research has shown that convolutional neural networks contain signiﬁcant redundancy, and high classiﬁcation accuracy can be obtained even when weights and activations are reduced from ﬂoating point to binary values. In this paper, we present Finn , a framework for building fast and ﬂexible FPGA accelerators using a ﬂexible heterogeneous streaming architecture. By utilizing a novel set of optimizations that enable eﬃcient mapping of binarized neural networks to hardware, we implement fully connected, convolutional and pooling layers, with per-layer compute resources being tailored to user-provided throughput requirements. On a ZC706 embedded FPGA platform drawing less than 25 W total system power, we demonstrate up to 12.3 million image classiﬁcations per second with 0.31 µ s latency on the MNIST dataset with 95.8% accuracy, and 21906 image classiﬁcations per second with 283 µ s latency on the CIFAR-10 and SVHN datasets with respectively 80.1% and 94.9% accuracy. To the best of our knowledge, ours are the fastest classiﬁcation rates reported to date on these benchmarks.},
+  bibsource = {dblp computer science bibliography, http://dblp.org},
+  biburl    = {http://dblp.org/rec/bib/conf/fpga/UmurogluFGBLJV17},
+  file      = {:Machine Learning/FPGA Frameworks/Umuroglu2017 - FINN_ a Framework for Fast, Scalable Binarized Neural Network Inference.pdf:PDF},
+  groups    = {FPGA implementation},
+  owner     = {Matthias Wess},
+  timestamp = {2017-12-13},
+  url       = {http://dl.acm.org/citation.cfm?id=3021744},
+}
+
+@Article{Courbariaux2014,
+  author      = {Courbariaux, Matthieu and Bengio, Yoshua and David, Jean-Pierre},
+  title       = {Training deep neural networks with low precision multiplications},
+  journal     = {arXiv preprint arXiv:1412.7024},
+  year        = {2014},
+  abstract    = {Multipliers are the most space and power-hungry arithmetic operators of the digital implementation of deep neural networks. We train a set of state-of-the-art neural networks (Maxout networks) on three benchmark datasets: MNIST, CIFAR-10 and SVHN. They are trained with three distinct formats: floating point, fixed point and dynamic fixed point. For each of those datasets and for each of those formats, we assess the impact of the precision of the multiplications on the final error after training. We find that very low precision is sufficient not just for running trained networks but also for training them. For example, it is possible to train Maxout networks with 10 bits multiplications.},
+  date        = {2014-12-22},
+  eprint      = {1412.7024v5},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Courbariaux2014 - Training Deep Neural Networks with Low Precision Multiplications.pdf:PDF},
+  groups      = {Quantized Neural Nets, Pruning},
+  keywords    = {cs.LG, cs.CV, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-03-05},
+}
+
+@InProceedings{Han2015,
+  author      = {Song Han and Huizi Mao and William J. Dally},
+  title       = {Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding},
+  booktitle   = {ICLR},
+  year        = {2016},
+  abstract    = {Neural networks are both computationally intensive and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources. To address this limitation, we introduce "deep compression", a three stage pipeline: pruning, trained quantization and Huffman coding, that work together to reduce the storage requirement of neural networks by 35x to 49x without affecting their accuracy. Our method first prunes the network by learning only the important connections. Next, we quantize the weights to enforce weight sharing, finally, we apply Huffman coding. After the first two steps we retrain the network to fine tune the remaining connections and the quantized centroids. Pruning, reduces the number of connections by 9x to 13x; Quantization then reduces the number of bits that represent each connection from 32 to 5. On the ImageNet dataset, our method reduced the storage required by AlexNet by 35x, from 240MB to 6.9MB, without loss of accuracy. Our method reduced the size of VGG-16 by 49x from 552MB to 11.3MB, again with no loss of accuracy. This allows fitting the model into on-chip SRAM cache rather than off-chip DRAM memory. Our compression method also facilitates the use of complex neural networks in mobile applications where application size and download bandwidth are constrained. Benchmarked on CPU, GPU and mobile GPU, compressed network has 3x to 4x layerwise speedup and 3x to 7x better energy efficiency.},
+  date        = {2015-10-01},
+  eprint      = {1510.00149v5},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Compressed Neural Nets/Han2015 - Deep Compression_ Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding.pdf:PDF},
+  groups      = {Compressed Neural Networks},
+  keywords    = {cs.CV, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-01-31},
+}
+
+@Article{Chen_2017,
+  author    = {Yu-Hsin Chen and Tushar Krishna and Joel S. Emer and Vivienne Sze},
+  title     = {Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks},
+  journal   = {J. Solid-State Circuits},
+  year      = {2017},
+  volume    = {52},
+  number    = {1},
+  pages     = {127--138},
+  month     = {jan},
+  abstract  = {Eyeriss is an accelerator for state-of-the-art deep
+convolutional neural networks (CNNs). It optimizes for the energy
+efﬁciency of the entire system, including the accelerator chip
+and off-chip DRAM, for various CNN shapes by reconﬁguring
+the architecture. CNNs are widely used in modern AI systems
+but also bring challenges on throughput and energy efﬁciency
+to the underlying hardware. This is because its computation
+requires a large amount of data, creating signiﬁcant data
+movement from on-chip and off-chip that is more energyconsuming than computation. Minimizing data movement energy
+cost for any CNN shape, therefore, is the key to high throughput
+and energy efﬁciency. Eyeriss achieves these goals by using a
+proposed processing dataﬂow, called row stationary (RS), on a
+spatial architecture with 168 processing elements. RS dataﬂow
+reconﬁgures the computation mapping of a given shape, which
+optimizes energy efﬁciency by maximally reusing data locally
+to reduce expensive data movement, such as DRAM accesses.
+Compression and data gating are also applied to further improve
+energy efﬁciency. Eyeriss processes the convolutional layers
+at 35 frames/s and 0.0029 DRAM access/multiply and accumulation (MAC) for AlexNet at 278 mW (batch size N = 4), and
+0.7 frames/s and 0.0035 DRAM access/MAC for VGG-16
+at 236 mW (N = 3).},
+  bibsource = {dblp computer science bibliography, http://dblp.org},
+  biburl    = {http://dblp.org/rec/bib/journals/jssc/ChenKES17},
+  doi       = {10.1109/JSSC.2016.2616357},
+  file      = {:Machine Learning/Accelerators/Chen_2017 - Eyeriss_ An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks.pdf:PDF},
+  groups    = {Accelerators},
+  owner     = {Matthias Wess},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  timestamp = {2017-12-13},
+}
+
+@Article{Hubara2016,
+  author      = {Itay Hubara and Matthieu Courbariaux and Daniel Soudry and Ran El-Yaniv and Yoshua Bengio},
+  title       = {Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations},
+  journal     = {ArXiv},
+  year        = {2016},
+  abstract    = {We introduce a method to train Quantized Neural Networks (QNNs) — neural networks with
+ extremely low precision (e.g., 1-bit) weights and activations, at run-time. At traintime the quantized weights and activations are used for computing the parameter gradients.
+ During the forward pass, QNNs drastically reduce memory size and accesses, and replace
+ most arithmetic operations with bit-wise operations. As a result, power consumption is
+ expected to be drastically reduced. We trained QNNs over the MNIST, CIFAR-10, SVHN
+ and ImageNet datasets. The resulting QNNs achieve prediction accuracy comparable to
+ their 32-bit counterparts. For example, our quantized version of AlexNet with 1-bit weights
+ and 2-bit activations achieves 51% top-1 accuracy. Moreover, we quantize the parameter
+ gradients to 6-bits as well which enables gradients computation using only bit-wise operation. Quantized recurrent neural networks were tested over the Penn Treebank dataset, and
+ achieved comparable accuracy as their 32-bit counterparts using only 4-bits. Last but not
+ least, we programmed a binary matrix multiplication GPU kernel with which it is possible
+ to run our MNIST QNN 7 times faster than with an unoptimized GPU kernel, without
+s suffering any loss in classiﬁcation accuracy. The QNN code is available online.},
+  date        = {2016-09-22},
+  eprint      = {1609.07061v1},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Hubara2016 - Quantized Neural Networks_ Training Neural Networks with Low Precision Weights and Activations.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {Deep Learning, Neural Networks Compression, Energy Effcient Neural Networks, Computer vision, Language Models},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@InProceedings{Abdelouahab2017a,
+  author    = {Abdelouahab, Kamel and Pelcat, Maxime and Berry, Fran{\c{c}}ois},
+  title     = {PhD Forum: Why TanH can be a Hardware Friendly Activation Function for CNNs},
+  booktitle = {ICDSC 2017},
+  year      = {2017},
+  file      = {:Machine Learning/Quantized Neural Nets/Abdelouahab2017a - PhD Forum_ Why TanH Can Be a Hardware Friendly Activation Function for CNNs.pdf:PDF},
+  groups    = {Approximate Networks},
+  owner     = {Matthias Wess},
+  timestamp = {2017-12-18},
+}
+
+@InProceedings{Miyashita2016,
+  author      = {Daisuke Miyashita and Edward H. Lee and Boris Murmann},
+  title       = {Convolutional Neural Networks using Logarithmic Data Representation},
+  booktitle   = {ArXiv},
+  year        = {1603},
+  abstract    = {Recent advances in convolutional neural networks have considered model complexity and hardware efficiency to enable deployment onto embedded systems and mobile devices. For example, it is now well-known that the arithmetic operations of deep networks can be encoded down to 8-bit fixed-point without significant deterioration in performance. However, further reduction in precision down to as low as 3-bit fixed-point results in significant losses in performance. In this paper we propose a new data representation that enables state-of-the-art networks to be encoded to 3 bits with negligible loss in classification performance. To perform this, we take advantage of the fact that the weights and activations in a trained network naturally have non-uniform distributions. Using non-uniform, base-2 logarithmic representation to encode weights, communicate activations, and perform dot-products enables networks to 1) achieve higher classification accuracies than fixed-point at the same resolution and 2) eliminate bulky digital multipliers. Finally, we propose an end-to-end training procedure that uses log representation at 5-bits, which achieves higher final test accuracy than linear at 5-bits.},
+  date        = {2016-03-03},
+  eprint      = {1603.01025v2},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Miyashita2016 - Convolutional Neural Networks Using Logarithmic Data Representation.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.NE, cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-02-05},
+}
+
+@InProceedings{Lin2015,
+  author      = {Zhouhan Lin and Matthieu Courbariaux and Roland Memisevic and Yoshua Bengio},
+  title       = {Neural Networks with Few Multiplications},
+  booktitle   = {ICLR},
+  year        = {2016},
+  abstract    = {For most deep learning algorithms training is notoriously time consuming. Since most of the computation in training neural networks is typically spent on floating point multiplications, we investigate an approach to training that eliminates the need for most of these. Our method consists of two parts: First we stochastically binarize weights to convert multiplications involved in computing hidden states to sign changes. Second, while back-propagating error derivatives, in addition to binarizing the weights, we quantize the representations at each layer to convert the remaining multiplications into binary shifts. Experimental results across 3 popular datasets (MNIST, CIFAR10, SVHN) show that this approach not only does not hurt classification performance but can result in even better performance than standard stochastic gradient descent training, paving the way to fast, hardware-friendly training of neural networks.},
+  date        = {2015-10-11},
+  eprint      = {1510.03009v3},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Lin2015 - Neural Networks with Few Multiplications.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.LG, cs.NE},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@Online{Krizhevsky2009,
+  author       = {Krizhevsky, Alex and Nair, Vinod and Hinton, Geoffrey},
+  title        = {Cifar-10 and cifar-100 datasets},
+  month        = {mar},
+  year         = {2009},
+  groups       = {Datasets},
+  lastaccessed = {March 28, 2018},
+  url          = {https://www.cs.toronto.edu/~kriz/cifar.html},
+}
+
+@InProceedings{netzer2011reading,
+  author    = {Netzer, Yuval and Wang, Tao and Coates, Adam and Bissacco, Alessandro and Wu, Bo and Ng, Andrew Y},
+  title     = {Reading digits in natural images with unsupervised feature learning},
+  booktitle = {NIPS workshop on deep learning and unsupervised feature learning},
+  year      = {2011},
+  volume    = {2011},
+  number    = {2},
+  pages     = {5},
+  groups    = {Datasets},
+}
+
+@InProceedings{Chen2017,
+  author       = {Chen, Xi and Hu, Xiaolin and Zhou, Hucheng and Xu, Ningyi},
+  title        = {FxpNet: Training a deep convolutional neural network in fixed-point representation},
+  booktitle    = {Neural Networks (IJCNN), 2017 International Joint Conference on},
+  year         = {2017},
+  pages        = {2494--2501},
+  organization = {IEEE},
+  abstract     = {We introduce FxpNet, a framework to train deep pushes the limit of quantization by extremely quantizing the
+convolutional neural networks with low bit-width arithmetics parameter as one single bit (-1 and 1). As a consequence,
+in both forward pass and backward pass. During training during inference, memory footprint and memory accesses can
+procedure, FxpNet further reduces the bit-width of stored
+parameters (also known as primal parameters) by adaptively be drastically reduced, and most arithmetic operations can be
+updating their fixed-point formats. These primal parameters are implemented with bit-wise operations, i.e., binary convolution
+ususally represented in full resolution of floating-point values in kernel [22].
+previous binarzied and quantized neural networks. In FxpNet, However, all these state-of-the-art methods neglect the quan-
+during forward pass fixed-point primal weights and activations tization of primal parameters, which is defined as those
+will first be binarized before computation, while in backward
+pass all gradients are represented as low resolution fixed-point high resolution weights and bias stored to be updated across
+values and then accumulated to corresponding fixed-point primal different training mini-batches. These primal parameters
+parameters. To have highly efficient implementations in FPGAs, will be quantized or binarized every time before forward pass,
+ASICs and other dedicated devices, FxpNet introduces Integer and the associated gradient accumulation are still performed
+Batch Normalization (IBN) and Fixed-point ADAM (FxpADAM) in floating-point domain. Thus, the FPGA and ASIC still
+methods to further reduce the required floating-point operations,
+which will save considerable power and chip area. The evaluation need to implement expensive floating-point multiplication-
+on CIFAR-10 dataset indicates the effectiveness that FxpNet accumulation to handel parameter updates, and even the much
+with 12-bit primal parameters and 12-bit gradients achieves more expensive nonlinear quantization arithmetics.
+comparable prediction accuracy with state-of-art binarized and In this paper, we present FxpNet that pushes the limit of
+quantized neural networks. The corresponding training code quantization and binarization by representing the primal
+implemented in TensorFlow is available online. parameters in fixed-point format, which has never been con-},
+  file         = {:Machine Learning/Quantized Neural Nets/Chen2017 - FxpNet_ Training a Deep Convolutional Neural Network in Fixed Point Representation.pdf:PDF},
+  groups       = {Quantized Neural Nets},
+  owner        = {Matthias Wess},
+  timestamp    = {2018-02-05},
+}
+
+@Article{srivastava2014dropout,
+  author    = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  title     = {Dropout: A simple way to prevent neural networks from overfitting},
+  journal   = {The Journal of Machine Learning Research},
+  year      = {2014},
+  volume    = {15},
+  number    = {1},
+  pages     = {1929--1958},
+  groups    = {Training},
+  owner     = {Matthias Wess},
+  publisher = {JMLR. org},
+  timestamp = {2018-03-27},
+}
+
+@Article{Zhou2017,
+  author      = {Yiren Zhou and Seyed-Mohsen Moosavi-Dezfooli and Ngai-Man Cheung and Pascal Frossard},
+  title       = {Adaptive Quantization for Deep Neural Network},
+  journal     = {arXiv preprint arXiv:1712.01048},
+  year        = {2017},
+  abstract    = {In recent years Deep Neural Networks (DNNs) have been rapidly developed in various applications, together with increasingly complex architectures. The performance gain of these DNNs generally comes with high computational costs and large memory consumption, which may not be affordable for mobile platforms. Deep model quantization can be used for reducing the computation and memory costs of DNNs, and deploying complex DNNs on mobile equipment. In this work, we propose an optimization framework for deep model quantization. First, we propose a measurement to estimate the effect of parameter quantization errors in individual layers on the overall model prediction accuracy. Then, we propose an optimization process based on this measurement for finding optimal quantization bit-width for each layer. This is the first work that theoretically analyse the relationship between parameter quantization errors of individual layers and model accuracy. Our new quantization algorithm outperforms previous quantization optimization methods, and achieves 20-40% higher compression rate compared to equal bit-width quantization at the same model prediction accuracy.},
+  date        = {2017-12-04},
+  eprint      = {1712.01048v1},
+  eprintclass = {cs.LG},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Zhou2017 - Adaptive Quantization for Deep Neural Network.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.LG, stat.ML},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-12-18},
+}
+
+@InProceedings{Glorot2010a,
+  author    = {Glorot, Xavier and Bengio, Yoshua},
+  title     = {Understanding the difficulty of training deep feedforward neural networks},
+  booktitle = {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  year      = {2010},
+  pages     = {249--256},
+  abstract  = {learning methods for a wide array of deep architectures,
+including neural networks with many hidden layers (Vin-},
+  doi       = {ng},
+  file      = {:Machine Learning/CNN Training/Glorot2010a - Understanding the Difficulty of Training Deep Feedforward Neural Networks.pdf:PDF},
+  groups    = {Training},
+  owner     = {Matthias Wess},
+  timestamp = {2018-02-05},
+}
+
+@InProceedings{Krizhevsky2012,
+  author    = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  title     = {Imagenet classification with deep convolutional neural networks},
+  booktitle = {Advances in neural information processing systems},
+  year      = {2012},
+  pages     = {1097--1105},
+  groups    = {Architectures},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-28},
+}
+
+@InProceedings{Deng2009,
+  author       = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  title        = {Imagenet: A large-scale hierarchical image database},
+  booktitle    = {Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on},
+  year         = {2009},
+  pages        = {248--255},
+  organization = {IEEE},
+  groups       = {Datasets},
+  owner        = {Matthias Wess},
+  timestamp    = {2018-03-28},
+}
+
+@InProceedings{Li2017,
+  author    = {Hao Li and * and Soham De and * and Zheng Xu and 1 Christoph and Studer and Hanan Samet and 1 Tom and Goldstein},
+  title     = {Towards a Deeper Understanding of Training Quantized Neural Networks},
+  booktitle = {ICML},
+  year      = {2017},
+  abstract  = {Training neural networks with coarsely quantized weights is a key step towards learning on embedded platforms that have limited computing resources, memory capacity, and power con sumption. Numerous recent publications have studied methods for training quantized networks, but these studies have been purely experimental. In this work, we investigate the theory of training quantized neural networks by analyzing the convergence properties of some commonly used methods. Our main result shows that training algorithms that exploit high-precision representations have an important annealing property that purely quantized training methods lack, which explains many of the observed empirical differences between these types of algorithms.},
+  file      = {:Machine Learning/Quantized Neural Nets/Li2017 - Towards a Deeper Understanding of Training Quantized Neural Networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  owner     = {Matthias Wess},
+  timestamp = {2017-11-24},
+}
+
+@InProceedings{Alemdar2016,
+  author       = {Hande Alemdar and Vincent Leroy and Adrien Prost-Boucle and Fr{\'{e}}d{\'{e}}ric P{\'{e}}trot},
+  title        = {Ternary Neural Networks for Resource-Efficient AI Applications},
+  booktitle    = {2017 International Joint Conference on Neural Networks (IJCNN)},
+  year         = {2017},
+  pages        = {2547--2554},
+  organization = {IEEE},
+  abstract     = {The computation and storage requirements for Deep Neural Networks (DNNs) are usually high. This issue limits their deployability on ubiquitous computing devices such as smart phones, wearables and autonomous drones. In this paper, we propose ternary neural networks (TNNs) in order to make deep learning more resource-efficient. We train these TNNs using a teacher-student approach based on a novel, layer-wise greedy methodology. Thanks to our two-stage training procedure, the teacher network is still able to use state-of-the-art methods such as dropout and batch normalization to increase accuracy and reduce training time. Using only ternary weights and activations, the student ternary network learns to mimic the behavior of its teacher network without using any multiplication. Unlike its -1,1 binary counterparts, a ternary neural network inherently prunes the smaller weights by setting them to zero during training. This makes them sparser and thus more energy-efficient. We design a purpose-built hardware architecture for TNNs and implement it on FPGA and ASIC. We evaluate TNNs on several benchmark datasets and demonstrate up to 3.1x better energy efficiency with respect to the state of the art while also improving accuracy.},
+  date         = {2016-09-01},
+  eprint       = {1609.00222v2},
+  eprintclass  = {cs.LG},
+  eprinttype   = {arXiv},
+  file         = {:Machine Learning/Quantized Neural Nets/Alemdar2016 - Ternary Neural Networks for Resource Efficient AI Applications.pdf:PDF},
+  groups       = {Quantized Neural Nets},
+  journal      = {IJCNN},
+  keywords     = {cs.LG, cs.AI, cs.NE},
+  owner        = {Matthias Wess},
+  timestamp    = {2017-11-28},
+}
+
+@InProceedings{Taigman2014,
+  author    = {Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio and Wolf, Lior},
+  title     = {Deepface: Closing the gap to human-level performance in face verification},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  year      = {2014},
+  pages     = {1701--1708},
+  groups    = {Tasks},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-28},
+}
+
+@InProceedings{Sharma2016a,
+  author       = {Sharma, Hardik and Park, Jongse and Mahajan, Divya and Amaro, Emmanuel and Kim, Joon Kyung and Shao, Chenkai and Mishra, Asit and Esmaeilzadeh, Hadi},
+  title        = {From high-level deep neural models to FPGAs},
+  booktitle    = {Microarchitecture (MICRO), 2016 49th Annual IEEE/ACM International Symposium on},
+  year         = {2016},
+  pages        = {1--12},
+  organization = {IEEE},
+  publisher    = {IEEE},
+  abstract     = {Deep Neural Networks (DNNs) are compute-intensive learning
+models with growing applicability in a wide range of domains.
+FPGAs are an attractive choice for DNNs since they offer a
+programmable substrate for acceleration and are becoming
+available across different market segments. However, obtaining
+both performance and energy efficiency with FPGAs is a
+laborious task even for expert hardware designers. Furthermore,
+the large memory footprint of DNNs, coupled with the FPGAs’
+limited on-chip storage makes DNN acceleration using FPGAs
+more challenging. This work tackles these challenges by
+devising DNNWEAVER, a framework that automatically
+generates a synthesizable accelerator for a given (DNN, FPGA)
+pair from a high-level specification in Caffe [1]. To achieve large
+benefits while preserving automation, DNNWEAVER generates
+accelerators using hand-optimized design templates. First,
+DNNWEAVER translates a given high-level DNN specification to
+its novel ISA that represents a macro dataflow graph of the DNN.
+The DNNWEAVER compiler is equipped with our optimization
+algorithm that tiles, schedules, and batches DNN operations to
+maximize data reuse and best utilize target FPGA’s memory and
+other resources. The final result is a custom synthesizable accel-
+erator that best matches the needs of the DNN while providing
+high performance and efficiency gains for the target FPGA.
+We use DNNWEAVER to generate accelerators for a set of
+eight different DNN models and three different FPGAs, Xil-
+inx Zynq, Altera Stratix V, and Altera Arria 10. We use hardware
+measurements to compare the generated accelerators to both mul-
+ticore CPUs (ARM Cortex A15 and Xeon E3) and many-core GPUs
+(Tegra K1, GTX 650Ti, and Tesla K40). In comparison, the gen-
+erated accelerators deliver superior performance and efficiency
+without requiring the programmers to participate in the arduous
+task of hardware design.},
+  bibsource    = {dblp computer science bibliography, http://dblp.org},
+  biburl       = {http://dblp.org/rec/bib/conf/micro/SharmaPMAKSME16},
+  doi          = {10.1109/MICRO.2016.7783720},
+  file         = {:Machine Learning/FPGA Frameworks/Sharma2016 - From High Level Deep Neural Models to FPGAs.pdf:PDF},
+  groups       = {FPGA implementation},
+  owner        = {Matthias Wess},
+  timestamp    = {2018-03-28},
+}
+
+@InProceedings{Lin2015a,
+  author    = {Darryl D. Lin and Sachin S. Talathi and V. Sreekanth Annapureddy},
+  title     = {Fixed Point Quantization of Deep Convolutional Networks},
+  booktitle = {Proceedings of the 33rd International Conference on International Conference on Machine Learning - Volume 48},
+  year      = {2016},
+  series    = {ICML'16},
+  pages     = {2849--2858},
+  publisher = {JMLR.org},
+  abstract  = {In recent years increasingly complex architectures for deep convolution networks (DCNs) have been proposed to boost the performance on image recognition tasks. However, the gains in performance have come at a cost of substantial increase in computation and model storage resources. Fixed point implementation of DCNs has the potential to alleviate some of these complexities and facilitate potential deployment on embedded hardware. In this paper, we propose a quantizer design for fixed point implementation of DCNs. We formulate and solve an optimization problem to identify optimal fixed point bit-width allocation across DCN layers. Our experiments show that in comparison to equal bit-width settings, the fixed point DCNs with optimized bit width allocation offer >20% reduction in the model size without any loss in accuracy on CIFAR-10 benchmark. We also demonstrate that fine-tuning can further enhance the accuracy of fixed point DCNs beyond that of the original floating point model. In doing so, we report a new state-of-the-art fixed point performance of 6.78% error-rate on CIFAR-10 benchmark.},
+  acmid     = {3045690},
+  file      = {:Machine Learning/Quantized Neural Nets/Lin2015a - Fixed Point Quantization of Deep Convolutional Networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  keywords  = {cs.LG, rank3},
+  location  = {New York, NY, USA},
+  numpages  = {10},
+  owner     = {Matthias Wess},
+  review    = {SQNR based Quantization},
+  timestamp = {2017-12-18},
+  url       = {http://dl.acm.org/citation.cfm?id=3045390.3045690},
+}
+
+@InProceedings{Courbariaux2015,
+  author    = {Courbariaux, Matthieu and Bengio, Yoshua and David, Jean-Pierre},
+  title     = {Binaryconnect: Training deep neural networks with binary weights during propagations},
+  booktitle = {Advances in neural information processing systems},
+  year      = {2015},
+  pages     = {3123--3131},
+  abstract  = {Deep Neural Networks (DNN) have achieved state-of-the-art results in a wide
+range of tasks, with the best results obtained with large training sets and large
+models. In the past, GPUs enabled these breakthroughs because of their greater
+computational speed. In the future, faster computation at both training and test
+time is likely to be crucial for further progress and for consumer applications on
+low-power devices. As a result, there is much interest in research and develop-
+ment of dedicated hardware for Deep Learning (DL). Binary weights, i.e., weights
+which are constrained to only two possible values (e.g. -1 or 1), would bring great
+beneﬁts to specialized DL hardware by replacing many multiply-accumulate op-
+erations by simple accumulations, as multipliers are the most space and power-
+hungry components of the digital implementation of neural networks. We in-
+troduce BinaryConnect, a method which consists in training a DNN with binary
+weights during the forward and backward propagations, while retaining precision
+of the stored weights in which gradients are accumulated. Like other dropout
+schemes, we show that BinaryConnect acts as regularizer and we obtain near
+state-of-the-art results with BinaryConnect on the permutation-invariant MNIST,
+CIFAR-10 and SVHN.},
+  file      = {:Machine Learning/Quantized Neural Nets/Courbariaux2015 - Binaryconnect_ Training Deep Neural Networks with Binary Weights during Propagations.pdf:PDF},
+  groups    = {Quantized Neural Nets, FPGA implementation},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-28},
+}
+
+@Article{Howard2017,
+  author      = {Andrew G. Howard and Menglong Zhu and Bo Chen and Dmitry Kalenichenko and Weijun Wang and Tobias Weyand and Marco Andreetto and Hartwig Adam},
+  title       = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications},
+  journal     = {ICLR},
+  year        = {2017},
+  abstract    = {We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to choose the right sized model for their application based on the constraints of the problem. We present extensive experiments on resource and accuracy tradeoffs and show strong performance compared to other popular models on ImageNet classification. We then demonstrate the effectiveness of MobileNets across a wide range of applications and use cases including object detection, finegrain classification, face attributes and large scale geo-localization.},
+  date        = {2017-04-17},
+  eprint      = {1704.04861v1},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/CNN Architectures/Howard2017 - MobileNets_ Efficient Convolutional Neural Networks for Mobile Vision Applications.pdf:PDF},
+  groups      = {Architectures},
+  keywords    = {cs.CV},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-02-12},
+}
+
+@Article{Gysel2018,
+  author    = {Gysel, Philipp and Pimentel, Jon and Motamedi, Mohammad and Ghiasi, Soheil},
+  title     = {Ristretto: A Framework for Empirical Study of Resource-Efficient Inference in Convolutional Neural Networks},
+  journal   = {IEEE Transactions on Neural Networks and Learning Systems},
+  year      = {2018},
+  groups    = {Quantized Neural Nets},
+  owner     = {Matthias Wess},
+  publisher = {IEEE},
+  timestamp = {2018-03-28},
+}
+
+@Article{Gysel2016,
+  author    = {Gysel, Philipp and Motamedi, Mohammad and Ghiasi, Soheil},
+  title     = {Hardware-oriented approximation of convolutional neural networks},
+  journal   = {arXiv preprint arXiv:1604.03168},
+  year      = {2016},
+  abstract  = {High computational complexity hinders the widespread usage of Convolutional
+Neural Networks (CNNs), especially in mobile devices. Hardware accelerators
+are arguably the most promising approach for reducing both execution time and
+power consumption. One of the most important steps in accelerator development
+is hardware-oriented model approximation. In this paper we present Ristretto,
+a model approximation framework that analyzes a given CNN with respect to
+numerical resolution used in representing weights and outputs of convolutional
+and fully connected layers. Ristretto can condense models by using ﬁxed point
+arithmetic and representation instead of ﬂoating point. Moreover, Ristretto ﬁne-
+tunes the resulting ﬁxed point network. Given a maximum error tolerance of 1%,
+Ristretto can successfully condense CaffeNet and SqueezeNet to 8-bit. The code
+for Ristretto is available.},
+  file      = {:Machine Learning/Quantized Neural Nets/Gysel2016 - Hardware-oriented approximation of convolutional neural networks.pdf:PDF},
+  groups    = {Quantized Neural Nets},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-28},
+}
+
+@InProceedings{Rastegari2016,
+  author      = {Mohammad Rastegari and Vicente Ordonez and Joseph Redmon and Ali Farhadi},
+  title       = {XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks},
+  booktitle   = {ECCV},
+  year        = {2016},
+  abstract    = {We propose two efficient approximations to standard convolutional neural networks: Binary-Weight-Networks and XNOR-Networks. In Binary-Weight-Networks, the filters are approximated with binary values resulting in 32x memory saving. In XNOR-Networks, both the filters and the input to convolutional layers are binary. XNOR-Networks approximate convolutions using primarily binary operations. This results in 58x faster convolutional operations and 32x memory savings. XNOR-Nets offer the possibility of running state-of-the-art networks on CPUs (rather than GPUs) in real-time. Our binary networks are simple, accurate, efficient, and work on challenging visual tasks. We evaluate our approach on the ImageNet classification task. The classification accuracy with a Binary-Weight-Network version of AlexNet is only 2.9% less than the full-precision AlexNet (in top-1 measure). We compare our method with recent network binarization methods, BinaryConnect and BinaryNets, and outperform these methods by large margins on ImageNet, more than 16% in top-1 accuracy.},
+  date        = {2016-03-16},
+  eprint      = {1603.05279v4},
+  eprintclass = {cs.CV},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/Quantized Neural Nets/Rastegari2016 - XNOR Net_ ImageNet Classification Using Binary Convolutional Neural Networks.pdf:PDF},
+  groups      = {Quantized Neural Nets},
+  keywords    = {cs.CV},
+  owner       = {Matthias Wess},
+  timestamp   = {2017-11-28},
+}
+
+@Article{Rajpurkar2017,
+  author    = {Rajpurkar, Pranav and Hannun, Awni Y and Haghpanahi, Masoumeh and Bourn, Codie and Ng, Andrew Y},
+  title     = {Cardiologist-level arrhythmia detection with convolutional neural networks},
+  journal   = {arXiv preprint arXiv:1707.01836},
+  year      = {2017},
+  groups    = {Tasks},
+  owner     = {Matthias Wess},
+  timestamp = {2018-03-28},
+}
+
+@Article{Ji2017a,
+  author      = {Ji, Yu and Zhang, YouHui and Chen, WenGuang and Xie, Yuan},
+  title       = {Bridging the Gap Between Neural Networks and Neuromorphic Hardware with A Neural Network Compiler},
+  journal     = {arXiv preprint arXiv:1801.00746},
+  year        = {2017},
+  abstract    = {Different from developing neural networks (NNs) for general-purpose processors, the development for NN chips usually faces with some hardware-specific restrictions, such as limited precision of network signals and parameters, constrained computation scale, and limited types of non-linear functions. This paper proposes a general methodology to address the challenges. We decouple the NN applications from the target hardware by introducing a compiler that can transform an existing trained, unrestricted NN into an equivalent network that meets the given hardware's constraints. We propose multiple techniques to make the transformation adaptable to different kinds of NN chips, and reliable for restrict hardware constraints. We have built such a software tool that supports both spiking neural networks (SNNs) and traditional artificial neural networks (ANNs). We have demonstrated its effectiveness with a fabricated neuromorphic chip and a processing-in-memory (PIM) design. Tests show that the inference error caused by this solution is insignificant and the transformation time is much shorter than the retraining time. Also, we have studied the parameter-sensitivity evaluations to explore the tradeoffs between network error and resource utilization for different transformation strategies, which could provide insights for co-design optimization of neuromorphic hardware and software.},
+  date        = {2017-11-15},
+  eprint      = {1801.00746v3},
+  eprintclass = {cs.NE},
+  eprinttype  = {arXiv},
+  file        = {:Machine Learning/NN Compiler/Ji2017a - Bridging the Gap between Neural Networks and Neuromorphic Hardware with a Neural Network Compiler.pdf:PDF},
+  groups      = {NN Compiler},
+  keywords    = {cs.NE, cs.ET, cs.LG},
+  owner       = {Matthias Wess},
+  timestamp   = {2018-02-27},
+}
+
+@Article{Zhang2015a,
+  author        = {Zhang, Jiajun and Zong, Chengqing},
+  title         = {Deep neural networks in machine translation: An overview},
+  journal       = {IEEE Intelligent Systems},
+  year          = {2015},
+  volume        = {30},
+  number        = {5},
+  pages         = {16--25},
+  __markedentry = {[Matthias Wess:]},
+  groups        = {Tasks},
+  owner         = {Matthias Wess},
+  publisher     = {IEEE},
+  timestamp     = {2018-03-28},
+}
+
+@InProceedings{han2016eie,
+  author       = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A and Dally, William J},
+  title        = {EIE: efficient inference engine on compressed deep neural network},
+  booktitle    = {Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on},
+  year         = {2016},
+  pages        = {243--254},
+  organization = {IEEE},
+  owner        = {Matthias Wess},
+  timestamp    = {2018-03-29},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: fileDirectory:\\\\atviee14ja\\eld_literature;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Neural Networks\;2\;1\;\;\;\;;
+2 StaticGroup:Accelerators\;0\;1\;\;\;\;;
+2 StaticGroup:Approximate Networks\;0\;1\;\;\;\;;
+2 StaticGroup:Architectures\;0\;1\;\;\;\;;
+2 StaticGroup:Compressed Neural Networks\;2\;1\;\;\;\;;
+3 StaticGroup:Pruning\;0\;1\;\;\;\;;
+2 StaticGroup:Datasets\;2\;1\;\;\;\;;
+2 StaticGroup:Frameworks\;2\;1\;\;\;\;;
+3 StaticGroup:FPGA implementation\;2\;1\;\;\;\;;
+2 StaticGroup:NN Compiler\;0\;1\;\;\;\;;
+2 StaticGroup:Quantized Neural Nets\;2\;1\;\;\;\;;
+2 StaticGroup:Training\;0\;1\;\;\;\;;
+2 StaticGroup:Tasks\;0\;1\;\;\;\;;
+}

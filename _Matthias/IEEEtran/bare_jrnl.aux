@@ -1,0 +1,168 @@
+\relax 
+\citation{Krizhevsky2012}
+\citation{Deng2009}
+\citation{Taigman2014}
+\citation{Rajpurkar2017}
+\citation{Zhang2015a}
+\citation{He2016}
+\citation{Zhang2015}
+\citation{Han2015}
+\citation{Zhou2017a}
+\citation{Han2015}
+\citation{Chen2017}
+\citation{Lin2015a}
+\citation{Courbariaux2014}
+\citation{Han2015}
+\citation{Dong2017}
+\citation{Han2015a}
+\citation{Han2015}
+\citation{Yang2017}
+\citation{Yu2017}
+\citation{Courbariaux2014}
+\citation{Gysel2016a}
+\citation{Zhou2017a}
+\citation{Lin2015a}
+\citation{Zhou2017}
+\citation{han2016eie}
+\citation{Zhou2017a}
+\citation{Yang2017}
+\citation{Zhou2017a}
+\citation{Gysel2016}
+\citation{Hubara2016}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\newlabel{sec:intro}{{I}{1}}
+\citation{Zhou2017}
+\citation{Hubara2016}
+\citation{Zhou2017a}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Motivational Case Study}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An example Network with two layers demonstrating (a) Layer-wise Precision Scaling (b) Retraining with Quantization-regularization. Starting with two layer network at first the bit-widths of both layers are adjusted by defining a lower precision format with the quantization levels marked as dotted lines in the histogram charts (a). To reduce the quantization error, retraining with additional regularization, decreasing the average distance of the weights to the quantization levels, is performed (b).}}{2}}
+\newlabel{fig:intro}{{1}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Proposed Method}{2}}
+\citation{Zhou2017a}
+\citation{Hubara2016}
+\citation{Gysel2016a}
+\citation{Zhou2017a}
+\citation{Hubara2016}
+\citation{Gysel2016a}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Learned Weight Quantization step by step}}{3}}
+\newlabel{fig:process}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Direct Quantization}{3}}
+\newlabel{subsec:quant}{{\unhbox \voidb@x \hbox {III-A}}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}1}Quantization Scheme Evaluation}{3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {III-A}1a}Power-of-two quantization}{3}}
+\newlabel{eq:pow2_quant}{{1}{3}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Variables used in this work}}{3}}
+\newlabel{tab:variables}{{I}{3}}
+\newlabel{eq:n1_max}{{2}{3}}
+\newlabel{eq:s_max}{{3}{3}}
+\newlabel{eq:n2}{{4}{3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {III-A}1b}Dynamic Fixed Point}{3}}
+\newlabel{eq:dfp_nums}{{5}{3}}
+\newlabel{eq:dfp_quant}{{6}{3}}
+\citation{Springenberg2015}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Distributions before and after direct weight quantization for (a) Dynamic Fixed Point and (b) Power-of-two quantization}}{4}}
+\newlabel{fig:quant_hist}{{3}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Mean square error for an example layer when applying Power-of-two and Dynamic Fixed Point quantization with different bit-widths. While when using DFP quantization the error decreases exponentially, for Po2 quantization the quantization error reaches the minimum already at bit-width 4}}{4}}
+\newlabel{fig:quant_mse}{{4}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces With increasing bit-widths the sparsity due to quantization decreases for Dynamic Fixed Point and Power-of-two quantization. Sparsity is denotes the amount of weights that are 0 relative to the total amount of Weights}}{4}}
+\newlabel{fig:quant_sparse}{{5}{4}}
+\newlabel{layerwise}{{\unhbox \voidb@x \hbox {III-A}2}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}2}Layer-wise Precision Scaling}{4}}
+\newlabel{eq:w_mem}{{7}{4}}
+\newlabel{eq:acc_deg}{{8}{4}}
+\citation{Lin2015a}
+\citation{Shin2017}
+\citation{Han2015a}
+\citation{Yang2017}
+\citation{Dong2017}
+\citation{Zhang2015}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Layer-wise Precision Scaling}}{5}}
+\newlabel{alg:lw}{{1}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Layer-wise Precision Scaling compared with equal bit-width quantization for DFP and Po2 quantization. Compression ratio is the ratio between 32bit weight memory and the weight memory for the quantized network. Point i indicates DFP with $b_n=[$7 7 7 4 4 3 3 7 7$]$ , point ii indicates Po2 with $b_n=[$4 4 4 4 3 3 4 4 4$]$.}}{5}}
+\newlabel{fig:lw_scale}{{6}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Trained Quantization}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Performance Metrics used for Fine-tuning}}{5}}
+\newlabel{tab:metrics}{{II}{5}}
+\newlabel{subsec:qr}{{\unhbox \voidb@x \hbox {III-B}1}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Quantization-Regularization}{5}}
+\newlabel{eq:quant_reg}{{9}{5}}
+\newlabel{eq:lossfunction}{{10}{5}}
+\newlabel{subsec:wqr}{{\unhbox \voidb@x \hbox {III-B}2}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Weighted Quantization-Regularization}{5}}
+\newlabel{eq:w_quant_reg}{{11}{5}}
+\citation{Lin2015a}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Illustration of Quantization-Regularization. The first column shows the floating point values of the weights on which the actual training is performed. The second column shows the quantized weights, and the third column the element-wise absolute difference of floating point and quantized weights. Changes of quantized weights are marked in the second column. \leavevmode {\color  {red}Weight update for $W_f$ is performed based on backpropagation of the modified loss function (eq. 10\hbox {}).} Successfully quantized weights are marked in the third column. After Epoch 1 (a) the weights are hardly regularized and $QR$ is relatively large. Epoch 2 (b) shows that due to regularization, weights are pulled closer to the quantization levels $\mathbf  {Q_n=\{0,\pm 0.25, \pm 0.5, \pm 0.75\}}$ and $QR$ gets smaller. For three of the weights the resulting quantization level changed, and weights decrease their distance to the next quantization level. Epoch 3 (c) shows further reduction of the $QR$ term.}}{6}}
+\newlabel{fig:weightreg}{{7}{6}}
+\newlabel{eq:lossfunction2}{{12}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Summary and Analysis}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Fine-tuning with Quantization-Regularization and Weighted Quantization Regularization}}{6}}
+\newlabel{alg:quant}{{2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Fine-tuning of All-Convolutional Net for CIFAR-10 with linear increasing $\pmb  {\lambda }\mathbf  {_2}$ for 4-bit equal bit-width Po2 quantization. $\pmb  {\Delta }\mathbf  {Acc}$ is decreased from $\mathbf  {14.09\%}$ to $\mathbf  {0.14\%}$ resulting in Quantized Test Accuracy of $\mathbf  {90.18\%}$ in comparison to initial Floating Point Test Accuracy $\mathbf  {90.83\%}$.}}{6}}
+\newlabel{fig:acc_example}{{8}{6}}
+\citation{Krizhevsky2009}
+\citation{netzer2011reading}
+\citation{Springenberg2015}
+\citation{Springenberg2015}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Distribution of weights in layer 5 of AllConvNet (CIFAR-10) during fine-tuning with WQR and QR to (a) 4-bit Dynamic Fixed Point and (b) 4-bit Po2. DFP (a) is trained with $\mathbf  {\lambda _2 = epoch*10}$. Region i shows the faster quantization of weights with high magnitudes and slower quantization of weights close to 0. At epoch 150 QR is applied with $\mathbf  {\lambda _1 = 100}$ to quantize also weights with smaller values (ii). Po2 (b) is trained with $\mathbf  {\lambda _2 = epoch*10}$. Region iii also shows slower quantization for small magnitude weights. Due to the distribution of quantization levels, weights around 0 are already close to the next quantization level (iv).}}{7}}
+\newlabel{fig:WQR_QR}{{9}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental Results}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Experimental Setup}{7}}
+\citation{Krizhevsky2009}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces All-CNN-C Architecture and the number of weights and MAC-operations for one forward computation with batch-size one.}}{8}}
+\newlabel{tab:allconv}{{III}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Performance Analysis}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}CIFAR-100}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Results for direct and trained DFP and Po2 quantization with equal bit-widths on ALL-CNN for CIFAR-100. For DFP also Layer-wise Precision Scaling with direct and trained quantization is illustrated.}}{8}}
+\newlabel{fig:lw_100}{{10}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}CIFAR-10}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}3}SVHN}{8}}
+\citation{Tang2017}
+\citation{Courbariaux2014}
+\citation{Courbariaux2015}
+\citation{Gysel2016}
+\citation{Gupta2015a}
+\citation{Gupta2015a}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Results in comparison to floating point baseline of All-CNN for CIFAR-100 (CR=Compression ratio)}}{9}}
+\newlabel{tab:res_CIFAR100}{{IV}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Results in comparison to floating point baseline of All-CNN for CIFAR-10}}{9}}
+\newlabel{tab:res_CIFAR10}{{V}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Results in comparison to floating point baseline of All-CNN for SVHN}}{9}}
+\newlabel{tab:res_SVHN}{{VI}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Results for direct and trained DFP and Po2 quantization with equal bit-widths on ALL-CNN for SVHN. For DFP also Layer-wise Precision Scaling with direct and trained quantization is illustrated.}}{9}}
+\newlabel{fig:lw_svhn}{{11}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Comparison with Related Work}{9}}
+\citation{Courbariaux2014}
+\citation{Gysel2016}
+\citation{Zhou2017a}
+\bibstyle{IEEEtran}
+\bibdata{lib}
+\bibcite{Krizhevsky2012}{1}
+\bibcite{Deng2009}{2}
+\bibcite{Taigman2014}{3}
+\bibcite{Rajpurkar2017}{4}
+\bibcite{Zhang2015a}{5}
+\bibcite{He2016}{6}
+\bibcite{Zhang2015}{7}
+\bibcite{Han2015}{8}
+\bibcite{Zhou2017a}{9}
+\bibcite{Chen2017}{10}
+\bibcite{Lin2015a}{11}
+\bibcite{Courbariaux2014}{12}
+\bibcite{Dong2017}{13}
+\bibcite{Han2015a}{14}
+\bibcite{Yang2017}{15}
+\bibcite{Yu2017}{16}
+\bibcite{Gysel2016a}{17}
+\bibcite{Zhou2017}{18}
+\bibcite{han2016eie}{19}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{10}}
+\@writefile{toc}{\contentsline {section}{References}{10}}
+\bibcite{Gysel2016}{20}
+\bibcite{Hubara2016}{21}
+\bibcite{Springenberg2015}{22}
+\bibcite{Shin2017}{23}
+\bibcite{Krizhevsky2009}{24}
+\bibcite{netzer2011reading}{25}
+\bibcite{Tang2017}{26}
+\bibcite{Courbariaux2015}{27}
+\bibcite{Gupta2015a}{28}

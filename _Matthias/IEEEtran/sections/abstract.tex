@@ -1,0 +1,15 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Deployment of Deep Neural Networks (DNNs) on hardware platforms 
+is often constrained by limited on-chip memory and computational power. 
+The proposed weight quantization offers the possibility of optimizing weight memory alongside transforming the weights to hardware friendly data-types. 
+We apply \emph{Dynamic Fixed Point} and \emph{Power-of-two quantization} in conjunction with \emph{Layer-wise Precision Scaling} to minimize the weight memory. To alleviate accuracy degradation due to precision scaling, we employ 
+quantization-aware fine-tuning.
+For fine-tuning, \emph{quantization-regularization} and \emph{weighted quantization-regularization} are introduced 
+to force the trained quantization by adding the distance of the weights to the desired quantization levels as a regularization term to the loss-function. While Dynamic Fixed Point quantization performs better when allowing different bit-widths for each layer, Power-of-two quantization in combination with retraining allows higher compression rates for equal bit-width quantization.
+The techniques are verified on an All-Convolutional Network. With a maximum accuracy degradation of 0.10 percentage points, for Dynamic Fixed Point with Layer-wise Precision Scaling we achieve compression ratios of $7.34$ for CIFAR-10, $4.7$ for CIFAR-100 and $9.33$ for SVHN dataset.
+%\todo[inline]{Can we mention as On average, the proposed technique achieves xyz$\times$ compression for dynamic fixed point and power-of-two quantization with a maximum accuracy degradation of 1\% on tested datasets.}
+\end{abstract}
+
+%As external memory access is compared to computations the most expensive operation by measures of power-consumption, many works focus on model compression and efficient buffering to reduce the transferred data.
+

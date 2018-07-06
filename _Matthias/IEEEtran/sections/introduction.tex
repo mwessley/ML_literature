@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:intro}
+\IEEEPARstart{S}{tarting} with AlexNet \cite{Krizhevsky2012} Deep Convolutional Neural Networks (DCNN) have been gaining attention by delivering impressive results on challenging problems, such as object recognition on ImageNet dataset \cite{Deng2009} or facial recognition \cite{Taigman2014}. 
+The adaptation of such DCNNs and deep neural networks (DNNs) in various 
+applications including autonomous driving, medical diagnosis \cite{Rajpurkar2017} and machine translation \cite{Zhang2015a} led to an 
+ever increasing amounts of data to process under high performance requirements. 
+%speeds a large field of applications as opened up, including .
+
+Most of these applications can be described as supervised learning tasks, 
+split into training phase and inference. In the training phase, 
+the algorithm is optimized to solve a certain task for the training data. The 
+architecture of a DCNN or DNN is defined by the number of layers and their 
+functionality (e.g. Convolutional, Fully Connected, Pool, Batch-Normalization) 
+and the layer-specific parameters which define the dimensions and behavior of the 
+layer in forward and backward-propagation. To train the defined architecture on a 
+given training data, the labeled data is fed through the network and 
+in back-propagation, the layer-specific weights are adjusted to decrease the error between the output and original label. For inference, DNN employs the model derived during training phase on the test or unknown data. 
+The ability to correctly process the new data based on training data
+is called generalization ability.
+
+Despite state-of-the-art DNNs taking one or several high-end GPUs 
+and up to several days to train, inference can be performed on 
+a broad spectrum of platforms including CPUs, GPUs, FPGAs, and ASICs. 
+With the increasing size of DNNs (e.g. ResNet \cite{He2016} up to 152 layers), even the complexity of inference is also exacerbating 
+due to more critical requirements and constraints such as limited power consumption, high throughput or hard real-time processing. 
+There are several challenges that hinder the efficient deployment and 
+inference of the State-of-the-art Deep Neural Networks (DNN) on embedded 
+resource constrained platforms. The two biggest challenges are the 
+large size of the networks and the total number of necessary operations in feed-forward computation, since a hardware accelerator design can be bound either by the limit of parallel operations, or by the memory interface transmission rate \cite{Zhang2015}. As a consequence, model compression and increasing the efficiency of computations, are two legitimate ways to reach hardware requirements.
+
+Recent works \cite{Han2015,Zhou2017a} have proven the robustness of DNNs 
+to compression of weights and simplification of activation functions with 
+high number of parameters and the resulting redundancy \cite{Han2015, Chen2017, Lin2015a, Courbariaux2014}. This enables several techniques including weight sharing \cite{Han2015, Dong2017}, pruning \cite{Han2015a} and Huffman Encoding \cite{Han2015} to reduce external memory access. Pruning not only reduces the memory footprint of a DNN model, but also allows skipping of multiplications with 0, thus reducing the amount of total multiplications \cite{Yang2017, Yu2017}. To reduce also power consumption within operations, the model parameters have to be quantized in specific formats a dedicated hardware can make use of.
+%\cmw{\textcolor{red}{What's the problem or short coming? In other terms why should we something if these solutions solve everything} The sentence was a bit confusing. Pruning is solved but the problem is quantization for efficient hardware inference}
+Dynamic fixed point \cite{Courbariaux2014, Gysel2016a} and power of two quantization \cite{Zhou2017a} are two hardware friendly formats that enable performing multiplications either as low-precision multiplications or simple shift operations. %Furthermore recent research suggests that hardware porting techniques such as training the network with ternary \cite{Alemdar2016} or binary weights \cite{Courbariaux2015, Kim2016, Tang2017, Hou2016} networks is efficient.
+%In addition to solely quantizing weights, also layer output maps can be quantized, thus reducing bit-width of not just one factor of each multiplication, but of both factors\cite{Gysel2018}. Due to evolving training strategies, networks employing binary activations and binary weights are reaching increasing accuracies for most tasks \cite{Hubara2016b, Rastegari2016}. \textcolor{red}{Are we using binary even in DFP?} \cmw{no, lowest possbile with DFP is 2 bit which means ternary. DFP has always one sign bit therefore binary would be +0 and -0}
+
+There are several approaches on how to best prepare a DNN for inference with 
+low precision data types. On one side when employing the state-of-the-art DNNs 
+it is desirable to directly make use of pre-trained models without architectural
+adjustments. \cite{Lin2015a} and \cite{Zhou2017} propose methods for layer-wise 
+bit-width optimization without retraining but not for bit-width optimization 
+followed by retraining. Furthermore, to fully leverage optimized hardware 
+accelerators for efficient inference (e.g.\cite{han2016eie}) it can be desirable 
+to force certain quantization \cite{Zhou2017a}, compression or pruning schemes 
+\cite{Yang2017} in an additional fine-tuning step. \cite{Zhou2017a} proposes 
+incremental weight quantization while incorporating a Power-of-two datatype and 
+achieve almost lossless quantization for several DNNs. Other works such as 
+\cite{Gysel2016, Hubara2016} employ stochastic quantization methods to during 
+training. In stochastic training the algorithm stores a floating point value and 
+the quantized value at the same time and for each feed forward computation the 
+quantized weights are newly computed on a stochastic basis.
+
+%\textcolor{red}{Mention a very high-level overview of the paper in a single paragraph, bit more details than that in the contributions.}
+
+%\subsection{Main contributions}
+\vspace{2ex}
+This paper makes the following contributions:
+\begin{itemize}
+%quantization during training
+%any quantization scheme
+%could be also applied per filter, on batchnorm
+\item We propose weighted quantization-regularization (WQR), a method for trained low precision quantization of weights in Neural Networks to any given quantization scheme.
+
+\item We combine Layer-wise Precision Scaling \cite{Zhou2017} with weighted quantization-regularization to reduce the loss in classification performance while increasing the compression rate.
+
+\item We analyze the benefits of Power-of-2 (Po2) and Dynamic Fixed Point (DFP) based quantization in our setting and in combination with weighted quantization-regularization and layer-wise bit-width optimization.
+\end{itemize}
+
+Aiming at highly efficient implementation in FPGAs, we perform evaluation 
+for quantization-regularization for dynamic fixed point \cite{Hubara2016} and 
+power of two quantization \cite{Zhou2017a} schemes on CNNs. We apply the proposed 
+algorithm on SVHN CIFAR-10 and CIFAR-100 dataset for two different quantization schemes and show that weighted quantization-regularization decreases loss in classification performance in comparison to direct weight quantization for All-Convolutional Network on CIFAR-10 from 1.5\% to 0\%. The results suggest that the proposed algorithm reduces accuracy loss due to quantization of CNNs.
+
+
+
+%\subsection{Organization of the paper}
+
+%In this paper we first explain in a motivational case study
+
+
+
