@@ -54,6 +54,8 @@ ML_literature
 No config folder found in ML_literature
 pkls
 No config folder found in pkls
+svg
+No config folder found in svg
 SoC_EML_ANNETTE
 imx8
 No config found for imx8
@@ -169,9 +171,9 @@ Progress for imx93_config_v7_3/annette_bench_conv_4: 56.57%
 imx93_config_v7_3_sampled
 {'annette_bench_conv_3': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv')}
 annette_bench_conv_3
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 61.34%
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 995
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 61.31%
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 61.65%
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 1000
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 61.61%
 annette_bench_conv_2
 Progress for imx93_config_v7_3_sampled/annette_bench_conv_2: 100.00%
 Progress for imx93_config_v7_3_sampled/annette_bench_conv_2: 1622
@@ -187,7 +189,7 @@ No config found for tmp
                          run                 model  progress  progress_perc
 0          imx93_config_v7_2     annette_bench_avg      31.0       3.629977
 1          imx93_config_v7_3  annette_bench_conv_4   21610.0      56.567719
-2  imx93_config_v7_3_sampled  annette_bench_conv_3     995.0      61.306223
+2  imx93_config_v7_3_sampled  annette_bench_conv_3    1000.0      61.614295
 3  imx93_config_v7_3_sampled  annette_bench_conv_2    1622.0      99.938386
 4  imx93_config_v7_3_sampled    annette_bench_conv    1622.0      99.938386
 imx8_bench
@@ -200,3 +202,17 @@ No config found for tmp
 Empty DataFrame
 Columns: []
 Index: []
+Traceback (most recent call last):
+  File "progress.py", line 126, in <module>
+    fig.write_image(f'plots/progress_{pd.Timestamp.now()}.svg')
+  File "/home/mwess/.venv/annette3.8/lib/python3.8/site-packages/plotly/basedatatypes.py", line 3821, in write_image
+    return pio.write_image(self, *args, **kwargs)
+  File "/home/mwess/.venv/annette3.8/lib/python3.8/site-packages/plotly/io/_kaleido.py", line 297, in write_image
+    path.write_bytes(img_data)
+  File "/usr/lib/python3.8/pathlib.py", line 1245, in write_bytes
+    with self.open(mode='wb') as f:
+  File "/usr/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'plots/progress_2023-10-13 15:51:01.176625.svg'
