@@ -202,17 +202,3 @@ No config found for tmp
 Empty DataFrame
 Columns: []
 Index: []
-Traceback (most recent call last):
-  File "progress.py", line 126, in <module>
-    fig.write_image(f'plots/progress_{pd.Timestamp.now()}.svg')
-  File "/home/mwess/.venv/annette3.8/lib/python3.8/site-packages/plotly/basedatatypes.py", line 3821, in write_image
-    return pio.write_image(self, *args, **kwargs)
-  File "/home/mwess/.venv/annette3.8/lib/python3.8/site-packages/plotly/io/_kaleido.py", line 297, in write_image
-    path.write_bytes(img_data)
-  File "/usr/lib/python3.8/pathlib.py", line 1245, in write_bytes
-    with self.open(mode='wb') as f:
-  File "/usr/lib/python3.8/pathlib.py", line 1222, in open
-    return io.open(self, mode, buffering, encoding, errors, newline,
-  File "/usr/lib/python3.8/pathlib.py", line 1078, in _opener
-    return self._accessor.open(self, flags, mode)
-FileNotFoundError: [Errno 2] No such file or directory: 'plots/progress_2023-10-13 15:51:01.176625.svg'
