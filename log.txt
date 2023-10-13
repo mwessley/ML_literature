@@ -175,9 +175,9 @@ Progress for imx93_config_v7_3/annette_bench_conv_4: 56.57%
 imx93_config_v7_3_sampled
 {'annette_bench_conv_3': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3_sampled/annette_bench_conv')}
 annette_bench_conv_3
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 64.43%
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 1045
-Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 64.39%
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 69.67%
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 1130
+Progress for imx93_config_v7_3_sampled/annette_bench_conv_3: 69.62%
 annette_bench_conv_2
 Progress for imx93_config_v7_3_sampled/annette_bench_conv_2: 100.00%
 Progress for imx93_config_v7_3_sampled/annette_bench_conv_2: 1622
@@ -193,7 +193,7 @@ No config found for tmp
                          run                 model  progress  progress_perc
 0          imx93_config_v7_2     annette_bench_avg      31.0       3.629977
 1          imx93_config_v7_3  annette_bench_conv_4   21610.0      56.567719
-2  imx93_config_v7_3_sampled  annette_bench_conv_3    1045.0      64.386938
+2  imx93_config_v7_3_sampled  annette_bench_conv_3    1130.0      69.624153
 3  imx93_config_v7_3_sampled  annette_bench_conv_2    1622.0      99.938386
 4  imx93_config_v7_3_sampled    annette_bench_conv    1622.0      99.938386
 imx8_bench
@@ -202,12 +202,12 @@ No config found for ncs2
 imx8_config_v7_2
 {'annette_bench_conv_3': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_2/annette_bench_conv_3')}
 annette_bench_conv_3
-Progress for imx8_config_v7_2/annette_bench_conv_3: 29.31%
-Progress for imx8_config_v7_2/annette_bench_conv_3: 250
-Progress for imx8_config_v7_2/annette_bench_conv_3: 29.27%
+Progress for imx8_config_v7_2/annette_bench_conv_3: 72.10%
+Progress for imx8_config_v7_2/annette_bench_conv_3: 615
+Progress for imx8_config_v7_2/annette_bench_conv_3: 72.01%
 config
 No config found for config
 tmp
 No config found for tmp
                 run                 model  progress  progress_perc
-0  imx8_config_v7_2  annette_bench_conv_3     250.0      29.274005
+0  imx8_config_v7_2  annette_bench_conv_3     615.0      72.014052
