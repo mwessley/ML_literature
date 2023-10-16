@@ -275,9 +275,9 @@ Progress for imx8_config_v7_2/annette_bench_conv: 99.88%
 imx8_config_v7_3_sampled
 {'annette_bench_conv_3': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv')}
 annette_bench_conv_3
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 70.59%
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 1145
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 70.55%
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 79.22%
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 1285
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 79.17%
 annette_bench_conv_2
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_2: 100.00%
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_2: 1622
@@ -294,6 +294,6 @@ No config found for tmp
 0          imx8_config_v7_2  annette_bench_conv_3     853.0      99.882904
 1          imx8_config_v7_2  annette_bench_conv_2     853.0      99.882904
 2          imx8_config_v7_2    annette_bench_conv     853.0      99.882904
-3  imx8_config_v7_3_sampled  annette_bench_conv_3    1145.0      70.548367
+3  imx8_config_v7_3_sampled  annette_bench_conv_3    1285.0      79.174368
 4  imx8_config_v7_3_sampled  annette_bench_conv_2    1622.0      99.938386
 5  imx8_config_v7_3_sampled    annette_bench_conv    1622.0      99.938386
