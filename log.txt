@@ -64,9 +64,9 @@ No config found for rpi4
 xavier_config_v7_2
 {'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_2/annette_bench_conv')}
 annette_bench_conv
-Progress for xavier_config_v7_2/annette_bench_conv: 0.59%
-Progress for xavier_config_v7_2/annette_bench_conv: 5
-Progress for xavier_config_v7_2/annette_bench_conv: 0.59%
+Progress for xavier_config_v7_2/annette_bench_conv: 2.46%
+Progress for xavier_config_v7_2/annette_bench_conv: 21
+Progress for xavier_config_v7_2/annette_bench_conv: 2.46%
 imx93_config_v7
 {'annette_bench_conv_3': PosixPath('SoC_EML_ANNETTE/database/benchmarks/imx93_config_v7/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('SoC_EML_ANNETTE/database/benchmarks/imx93_config_v7/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/imx93_config_v7/annette_bench_conv'), 'annette_bench_conv_4': PosixPath('SoC_EML_ANNETTE/database/benchmarks/imx93_config_v7/annette_bench_conv_4')}
 annette_bench_conv_3
@@ -106,7 +106,7 @@ No config found for tf_basic
 7    imx93_config_v7_1      annette_bench_conv     736.0     100.000000
 8    imx93_config_v7_3  annette_bench_conv_avg   13516.0      35.380347
 9    imx93_config_v7_3       annette_bench_avg   38202.0     100.000000
-10  xavier_config_v7_2      annette_bench_conv       5.0       0.585480
+10  xavier_config_v7_2      annette_bench_conv      21.0       2.459016
 11     imx93_config_v7    annette_bench_conv_3     192.0     100.000000
 12     imx93_config_v7    annette_bench_conv_2     192.0     100.000000
 13     imx93_config_v7      annette_bench_conv     192.0     100.000000
@@ -148,9 +148,9 @@ Progress for imx93_config_v7_3_sampled/annette_bench_conv: 99.94%
 imx93_config_sweep
 {'annette_bench_conv': PosixPath('imx93_bench/database/benchmarks/imx93_config_sweep/annette_bench_conv')}
 annette_bench_conv
-Progress for imx93_config_sweep/annette_bench_conv: 22.97%
-Progress for imx93_config_sweep/annette_bench_conv: 235
-Progress for imx93_config_sweep/annette_bench_conv: 22.95%
+Progress for imx93_config_sweep/annette_bench_conv: 30.79%
+Progress for imx93_config_sweep/annette_bench_conv: 315
+Progress for imx93_config_sweep/annette_bench_conv: 30.76%
 config
 No config found for config
 tmp
@@ -244,7 +244,7 @@ The frame.append method is deprecated and will be removed from pandas in a futur
 3  imx93_config_v7_3_sampled  annette_bench_conv_3    1622.0      99.938386
 4  imx93_config_v7_3_sampled  annette_bench_conv_2    1622.0      99.938386
 5  imx93_config_v7_3_sampled    annette_bench_conv    1622.0      99.938386
-6         imx93_config_sweep    annette_bench_conv     235.0      22.949219
+6         imx93_config_sweep    annette_bench_conv     315.0      30.761719
 imx8_bench
 ncs2
 No config found for ncs2
@@ -265,9 +265,9 @@ Progress for imx8_config_v7_2/annette_bench_conv: 99.88%
 imx8_config_v7_3_sampled
 {'annette_bench_conv_3': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv')}
 annette_bench_conv_3
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 82.92%
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 1345
-Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 82.87%
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 83.23%
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 1350
+Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 83.18%
 annette_bench_conv_2
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_2: 100.00%
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_2: 1622
@@ -284,6 +284,6 @@ No config found for tmp
 0          imx8_config_v7_2  annette_bench_conv_3     853.0      99.882904
 1          imx8_config_v7_2  annette_bench_conv_2     853.0      99.882904
 2          imx8_config_v7_2    annette_bench_conv     853.0      99.882904
-3  imx8_config_v7_3_sampled  annette_bench_conv_3    1345.0      82.871226
+3  imx8_config_v7_3_sampled  annette_bench_conv_3    1350.0      83.179298
 4  imx8_config_v7_3_sampled  annette_bench_conv_2    1622.0      99.938386
 5  imx8_config_v7_3_sampled    annette_bench_conv    1622.0      99.938386
