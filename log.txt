@@ -122,11 +122,15 @@ Progress for xavier_config_sweep/annette_bench_conv: 100.00%
 Progress for xavier_config_sweep/annette_bench_conv: 1023
 Progress for xavier_config_sweep/annette_bench_conv: 99.90%
 xavier_config_v7_3
-{'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv')}
+{'annette_bench_conv_2': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv')}
+annette_bench_conv_2
+Progress for xavier_config_v7_3/annette_bench_conv_2: 11.91%
+Progress for xavier_config_v7_3/annette_bench_conv_2: 4551
+Progress for xavier_config_v7_3/annette_bench_conv_2: 11.91%
 annette_bench_conv
-Progress for xavier_config_v7_3/annette_bench_conv: 71.75%
-Progress for xavier_config_v7_3/annette_bench_conv: 27411
-Progress for xavier_config_v7_3/annette_bench_conv: 71.75%
+Progress for xavier_config_v7_3/annette_bench_conv: 100.00%
+Progress for xavier_config_v7_3/annette_bench_conv: 38201
+Progress for xavier_config_v7_3/annette_bench_conv: 100.00%
 config
 No config found for config
 imx8-cpu
@@ -185,10 +189,8 @@ progress.py:82: FutureWarning: The frame.append method is deprecated and will be
   runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
 progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
   runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
 progress.py:82: FutureWarning:
 
 The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
@@ -245,7 +247,8 @@ The frame.append method is deprecated and will be removed from pandas in a futur
 20         xavier_config_sweep    annette_bench_conv_3    1023.0      99.902344
 21         xavier_config_sweep    annette_bench_conv_2    1023.0      99.902344
 22         xavier_config_sweep      annette_bench_conv    1023.0      99.902344
-23          xavier_config_v7_3      annette_bench_conv   27411.0      71.752788
+23          xavier_config_v7_3    annette_bench_conv_2    4551.0      11.912989
+24          xavier_config_v7_3      annette_bench_conv   38201.0      99.997382
 ethos-u-vela
 No config folder found in ethos-u-vela
 imx93_bench
@@ -259,9 +262,9 @@ No config found for ncs2
 imx93_config_v7_3
 {'annette_bench_conv_2': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv'), 'annette_bench_conv_4': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv_4')}
 annette_bench_conv_2
-Progress for imx93_config_v7_3/annette_bench_conv_2: 60.06%
-Progress for imx93_config_v7_3/annette_bench_conv_2: 22945
-Progress for imx93_config_v7_3/annette_bench_conv_2: 60.06%
+Progress for imx93_config_v7_3/annette_bench_conv_2: 83.39%
+Progress for imx93_config_v7_3/annette_bench_conv_2: 31855
+Progress for imx93_config_v7_3/annette_bench_conv_2: 83.39%
 annette_bench_conv
 Progress for imx93_config_v7_3/annette_bench_conv: 100.00%
 Progress for imx93_config_v7_3/annette_bench_conv: 38201
@@ -304,7 +307,7 @@ tmp
 No config found for tmp
                          run                 model  progress  progress_perc
 0          imx93_config_v7_2     annette_bench_avg      31.0       3.629977
-1          imx93_config_v7_3  annette_bench_conv_2   22945.0      60.062300
+1          imx93_config_v7_3  annette_bench_conv_2   31855.0      83.385687
 2          imx93_config_v7_3    annette_bench_conv   38201.0      99.997382
 3          imx93_config_v7_3  annette_bench_conv_4   21610.0      56.567719
 4  imx93_config_v7_3_sampled  annette_bench_conv_3    1622.0      99.938386
@@ -317,9 +320,9 @@ imx8_bench
 imx8_config_v7_3
 {'annette_bench_conv_2': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3/annette_bench_conv')}
 annette_bench_conv_2
-Progress for imx8_config_v7_3/annette_bench_conv_2: 66.20%
-Progress for imx8_config_v7_3/annette_bench_conv_2: 25290
-Progress for imx8_config_v7_3/annette_bench_conv_2: 66.20%
+Progress for imx8_config_v7_3/annette_bench_conv_2: 86.53%
+Progress for imx8_config_v7_3/annette_bench_conv_2: 33055
+Progress for imx8_config_v7_3/annette_bench_conv_2: 86.53%
 annette_bench_conv
 Progress for imx8_config_v7_3/annette_bench_conv: 100.00%
 Progress for imx8_config_v7_3/annette_bench_conv: 38201
@@ -342,56 +345,60 @@ Progress for imx8_config_v7_2/annette_bench_conv: 853
 Progress for imx8_config_v7_2/annette_bench_conv: 99.88%
 imx8_config_v7_3_sampled
 {'annette_bench_conv_3': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx8_bench/database/benchmarks/imx8_config_v7_3_sampled/annette_bench_conv')}
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
 annette_bench_conv_3
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 100.00%
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 1622
 Progress for imx8_config_v7_3_sampled/annette_bench_conv_3: 99.94%
 annette_bench_conv_2
@@ -421,7 +428,7 @@ No config found for config
 tmp
 No config found for tmp
                          run                 model  progress  progress_perc
-0           imx8_config_v7_3  annette_bench_conv_2   25290.0      66.200722
+0           imx8_config_v7_3  annette_bench_conv_2   33055.0      86.526883
 1           imx8_config_v7_3    annette_bench_conv   38201.0      99.997382
 2           imx8_config_v7_2  annette_bench_conv_3     853.0      99.882904
 3           imx8_config_v7_2  annette_bench_conv_2     853.0      99.882904
