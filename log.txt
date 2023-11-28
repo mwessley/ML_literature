@@ -267,11 +267,15 @@ Progress for imx93_config_sweep/annette_bench_conv: 100.00%
 Progress for imx93_config_sweep/annette_bench_conv: 1023
 Progress for imx93_config_sweep/annette_bench_conv: 99.90%
 xavier_config_v7_3
-{'annette_bench_conv_2': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv')}
+{'annette_bench_conv_3': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('SoC_EML_ANNETTE/database/benchmarks/xavier_config_v7_3/annette_bench_conv')}
+annette_bench_conv_3
+Progress for xavier_config_v7_3/annette_bench_conv_3: 13.32%
+Progress for xavier_config_v7_3/annette_bench_conv_3: 5087
+Progress for xavier_config_v7_3/annette_bench_conv_3: 13.32%
 annette_bench_conv_2
-Progress for xavier_config_v7_3/annette_bench_conv_2: 91.48%
-Progress for xavier_config_v7_3/annette_bench_conv_2: 34945
-Progress for xavier_config_v7_3/annette_bench_conv_2: 91.47%
+Progress for xavier_config_v7_3/annette_bench_conv_2: 100.00%
+Progress for xavier_config_v7_3/annette_bench_conv_2: 38201
+Progress for xavier_config_v7_3/annette_bench_conv_2: 100.00%
 annette_bench_conv
 Progress for xavier_config_v7_3/annette_bench_conv: 100.00%
 Progress for xavier_config_v7_3/annette_bench_conv: 38201
@@ -343,11 +347,12 @@ No config found for tf_basic
 39          imx93_config_sweep    annette_bench_conv_3    1023.0      99.902344
 40          imx93_config_sweep    annette_bench_conv_2    1023.0      99.902344
 41          imx93_config_sweep      annette_bench_conv    1023.0      99.902344
-42          xavier_config_v7_3    annette_bench_conv_2   34945.0      91.474268
-43          xavier_config_v7_3      annette_bench_conv   38201.0      99.997382
-44           imx8_config_sweep    annette_bench_conv_3    1023.0      99.902344
-45           imx8_config_sweep    annette_bench_conv_2    1023.0      99.902344
-46           imx8_config_sweep      annette_bench_conv    1023.0      99.902344
+42          xavier_config_v7_3    annette_bench_conv_3    5087.0      13.316057
+43          xavier_config_v7_3    annette_bench_conv_2   38201.0      99.997382
+44          xavier_config_v7_3      annette_bench_conv   38201.0      99.997382
+45           imx8_config_sweep    annette_bench_conv_3    1023.0      99.902344
+46           imx8_config_sweep    annette_bench_conv_2    1023.0      99.902344
+47           imx8_config_sweep      annette_bench_conv    1023.0      99.902344
 ethos-u-vela
 No config folder found in ethos-u-vela
 imx93_bench
@@ -373,9 +378,9 @@ No config found for ncs2
 imx93_config_v7_3
 {'annette_bench_conv_3': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv_3'), 'annette_bench_conv_2': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv_2'), 'annette_bench_conv': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv'), 'annette_bench_conv_4': PosixPath('imx93_bench/database/benchmarks/imx93_config_v7_3/annette_bench_conv_4')}
 annette_bench_conv_3
-Progress for imx93_config_v7_3/annette_bench_conv_3: 63.81%
-Progress for imx93_config_v7_3/annette_bench_conv_3: 24375
-Progress for imx93_config_v7_3/annette_bench_conv_3: 63.81%
+Progress for imx93_config_v7_3/annette_bench_conv_3: 70.72%
+Progress for imx93_config_v7_3/annette_bench_conv_3: 27015
+Progress for imx93_config_v7_3/annette_bench_conv_3: 70.72%
 annette_bench_conv_2
 Progress for imx93_config_v7_3/annette_bench_conv_2: 100.00%
 Progress for imx93_config_v7_3/annette_bench_conv_2: 38201
@@ -411,148 +416,150 @@ Progress for imx93_config_sweep/annette_bench_conv_3: 99.90%
 annette_bench_conv_2
 Progress for imx93_config_sweep/annette_bench_conv_2: 100.00%
 Progress for imx93_config_sweep/annette_bench_conv_2: 1023
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+progress.py:82: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
 Progress for imx93_config_sweep/annette_bench_conv_2: 99.90%
 annette_bench_conv
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-  runs_df = runs_df.append({'run': r, 'model': m, 'progress': progress, 'progress_perc': progress_percentage}, ignore_index=True)
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
-progress.py:82: FutureWarning:
-
-The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
-
 Progress for imx93_config_sweep/annette_bench_conv: 100.00%
 Progress for imx93_config_sweep/annette_bench_conv: 1023
 Progress for imx93_config_sweep/annette_bench_conv: 99.90%
@@ -565,7 +572,7 @@ No config found for tmp
 1           imx93_config_v7_2  annette_bench_conv_2     853.0      99.882904
 2           imx93_config_v7_2    annette_bench_conv     853.0      99.882904
 3           imx93_config_v7_2     annette_bench_avg      31.0       3.629977
-4           imx93_config_v7_3  annette_bench_conv_3   24375.0      63.805560
+4           imx93_config_v7_3  annette_bench_conv_3   27015.0      70.716193
 5           imx93_config_v7_3  annette_bench_conv_2   38201.0      99.997382
 6           imx93_config_v7_3    annette_bench_conv   38201.0      99.997382
 7           imx93_config_v7_3  annette_bench_conv_4   21610.0      56.567719
@@ -587,9 +594,9 @@ Progress for imx8_config_v7_3/annette_bench_conv_2: 100.00%
 Progress for imx8_config_v7_3/annette_bench_conv_2: 38201
 Progress for imx8_config_v7_3/annette_bench_conv_2: 100.00%
 annette_bench_conv
-Progress for imx8_config_v7_3/annette_bench_conv: 58.73%
-Progress for imx8_config_v7_3/annette_bench_conv: 22435
-Progress for imx8_config_v7_3/annette_bench_conv: 58.73%
+Progress for imx8_config_v7_3/annette_bench_conv: 82.65%
+Progress for imx8_config_v7_3/annette_bench_conv: 31575
+Progress for imx8_config_v7_3/annette_bench_conv: 82.65%
 ncs2
 No config found for ncs2
 imx8_config_v7_2
@@ -641,7 +648,7 @@ No config found for tmp
                          run                 model  progress  progress_perc
 0           imx8_config_v7_3  annette_bench_conv_3   23770.0      62.221873
 1           imx8_config_v7_3  annette_bench_conv_2   38201.0      99.997382
-2           imx8_config_v7_3    annette_bench_conv   22435.0      58.727292
+2           imx8_config_v7_3    annette_bench_conv   31575.0      82.652741
 3           imx8_config_v7_2  annette_bench_conv_3     853.0      99.882904
 4           imx8_config_v7_2  annette_bench_conv_2     853.0      99.882904
 5           imx8_config_v7_2    annette_bench_conv     853.0      99.882904
